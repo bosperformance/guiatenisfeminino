@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)file:///C:/Users/tayna/Downloads/BOS_Ebook_Tenis_3.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guia Completo de Tênis de Corrida — BOS Performance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link href="./Guia Completo de Tênis de Corrida — BOS Performance_files/css2" rel="stylesheet">
+<style>
+:root{
+  --purple:#7B2D8B;--purple-dark:#5A1F68;--purple-light:#F3E6F7;--purple-mid:#D4A8E0;
+  --accent:#E040FB;--ink:#1A1A2E;--ink-light:#4A4A6A;--page-bg:#FDFBF7;--paper:#FFF8EE;
+  --border:#E8E0D5;--green:#2E7D32;--green-bg:#E8F5E9;--red:#C62828;--red-bg:#FDECEA;
+  --yellow:#F57F17;--yellow-bg:#FFF8E1;--blue:#1565C0;--blue-bg:#E3F2FD;
+  --font-size:17px;--line-height:1.85;--max-w:720px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Lora',Georgia,serif;background:#DDD5C8;background-image:radial-gradient(ellipse at 20% 50%,rgba(123,45,139,.07) 0%,transparent 60%),radial-gradient(ellipse at 80% 20%,rgba(224,64,251,.05) 0%,transparent 50%);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:20px 12px 80px}
+.shell{width:100%;max-width:var(--max-w);background:var(--page-bg);border-radius:4px 18px 18px 4px;box-shadow:-8px 0 0 #C9BAAA,0 6px 48px rgba(0,0,0,.2),0 1px 4px rgba(0,0,0,.1);position:relative;overflow:hidden}
+.shell::before{content:'';position:absolute;left:0;top:0;bottom:0;width:7px;background:linear-gradient(180deg,#5A1F68,#7B2D8B,#9C3FB5);z-index:20}
+
+/* PROGRESS */
+.prog-wrap{height:3px;background:#EEE8E0}
+.prog-fill{height:100%;background:linear-gradient(90deg,var(--purple),var(--accent));transition:width .5s ease}
+
+/* TOP NAV */
+.topnav{display:flex;align-items:center;justify-content:space-between;padding:11px 26px 11px 32px;border-bottom:1px solid var(--border);background:var(--page-bg);position:sticky;top:3px;z-index:90}
+.brand{font-family:'DM Sans',sans-serif;font-weight:700;font-size:10px;letter-spacing:.18em;color:var(--purple);text-transform:uppercase}
+.nav-right{display:flex;align-items:center;gap:7px}
+.pill{font-family:'DM Sans',sans-serif;font-size:10px;color:var(--ink-light);background:var(--purple-light);padding:3px 9px;border-radius:20px}
+.fbtn{background:none;border:1.5px solid var(--border);border-radius:5px;padding:3px 8px;cursor:pointer;font-size:11px;color:var(--ink-light);transition:all .2s;font-family:'DM Sans',sans-serif}
+.fbtn:hover{border-color:var(--purple);color:var(--purple)}
+.mbtn{background:none;border:none;cursor:pointer;color:var(--ink-light);font-size:20px;padding:3px 5px;transition:color .2s;line-height:1}
+.mbtn:hover{color:var(--purple)}
+
+/* MENU */
+.cmenu{position:absolute;top:50px;right:0;width:285px;background:var(--page-bg);border:1px solid var(--border);border-radius:0 0 0 14px;box-shadow:-4px 6px 28px rgba(0,0,0,.13);z-index:190;display:none;max-height:72vh;overflow-y:auto}
+.cmenu.open{display:block}
+.cmenu-hd{padding:13px 16px;background:var(--purple);color:white;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;position:sticky;top:0}
+.mitem{display:flex;align-items:center;gap:9px;padding:9px 14px;cursor:pointer;border-bottom:1px solid var(--border);transition:background .15s;font-family:'DM Sans',sans-serif;font-size:12.5px;color:var(--ink)}
+.mitem:hover{background:var(--purple-light)}
+.mitem.active{background:var(--purple-light);color:var(--purple);font-weight:700}
+.mitem .ck{color:var(--green);font-size:11px;margin-left:auto;flex-shrink:0}
+.mnum{font-size:9px;color:white;background:var(--purple-mid);border-radius:3px;padding:2px 5px;font-weight:700;min-width:22px;text-align:center;flex-shrink:0}
+
+/* PAGES */
+.content{padding:42px 54px 36px 60px;min-height:calc(85vh - 110px)}
+.page{display:none}
+.page.active{display:block;animation:fadeUp .35s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+
+/* TYPOGRAPHY */
+.cap-label{font-family:'DM Sans',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--purple);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.cap-label::after{content:'';flex:1;height:1px;background:var(--purple-mid)}
+.read-badge{display:none;align-items:center;gap:5px;font-family:'DM Sans',sans-serif;font-size:11px;color:var(--green);font-weight:700;background:var(--green-bg);padding:3px 10px;border-radius:20px;margin-bottom:14px}
+.read-badge.on{display:inline-flex}
+h1{font-family:'Playfair Display',Georgia,serif;font-size:2.3em;line-height:1.2;color:var(--ink);margin-bottom:10px;font-weight:700}
+h1 em{color:var(--purple);font-style:italic}
+h2{font-family:'Playfair Display',serif;font-size:1.45em;color:var(--ink);margin:30px 0 12px;font-weight:600;border-bottom:2px solid var(--purple-light);padding-bottom:7px}
+p{font-size:var(--font-size);line-height:var(--line-height);color:var(--ink);margin-bottom:15px}
+.lead{font-size:1.08em;color:var(--ink-light);font-style:italic;line-height:1.7;margin-bottom:26px;border-left:3px solid var(--purple-mid);padding-left:17px}
+.divider{width:55px;height:2px;background:linear-gradient(90deg,var(--purple),var(--accent));margin:24px 0;border-radius:2px}
+strong{font-weight:600}
+
+/* ALERTS / CARDS */
+.alert{display:flex;gap:13px;align-items:flex-start;border-radius:8px;padding:14px 17px;margin:18px 0;font-size:.92em;line-height:1.6}
+.ai{font-size:1.25em;flex-shrink:0;margin-top:1px}
+.ab strong{display:block;margin-bottom:3px;font-family:'DM Sans',sans-serif;font-size:.93em}
+.al-p{background:var(--purple-light);border-left:3px solid var(--purple)}
+.al-g{background:var(--green-bg);border-left:3px solid var(--green)}
+.al-r{background:var(--red-bg);border-left:3px solid var(--red)}
+.al-y{background:var(--yellow-bg);border-left:3px solid var(--yellow)}
+.al-b{background:var(--blue-bg);border-left:3px solid var(--blue)}
+.card{border-radius:10px;padding:17px 20px;margin:18px 0;border:1px solid transparent}
+.card p{font-size:.93em;margin-bottom:6px}
+.card p:last-child{margin-bottom:0}
+.cp{background:var(--purple-light);border-color:var(--purple-mid)}
+.cg{background:var(--green-bg);border-color:#A5D6A7}
+.cr{background:var(--red-bg);border-color:#EF9A9A}
+.cy{background:var(--yellow-bg);border-color:#FFE082}
+.cpaper{background:var(--paper);border-color:var(--border)}
+.cdark{background:var(--ink);color:white}
+
+/* TABLE */
+.t{width:100%;border-collapse:collapse;margin:18px 0;font-size:.88em;font-family:'DM Sans',sans-serif}
+.t th{background:var(--purple);color:white;padding:9px 13px;text-align:left;font-weight:700;font-size:.82em}
+.t th:first-child{border-radius:8px 0 0 0}.t th:last-child{border-radius:0 8px 0 0}
+.t td{padding:9px 13px;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.5}
+.t tr:nth-child(even) td{background:var(--purple-light)}
+.t td:first-child{font-weight:600;color:var(--purple-dark)}
+
+/* GRID */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin:18px 0}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:18px 0}
+.bcard{border:1.5px solid var(--border);border-radius:10px;padding:15px;background:white;transition:box-shadow .2s,transform .2s}
+.bcard:hover{box-shadow:0 4px 22px rgba(123,45,139,.12);transform:translateY(-2px)}
+.bname{font-family:'DM Sans',sans-serif;font-weight:700;font-size:.85em;color:var(--purple-dark);text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px}
+.bmodel{font-family:'Playfair Display',serif;font-weight:600;font-size:.97em;color:var(--ink);margin-bottom:7px}
+.tag{display:inline-block;background:var(--purple-light);color:var(--purple);font-family:'DM Sans',sans-serif;font-size:.72em;font-weight:700;padding:2px 7px;border-radius:4px;margin:2px 2px 0 0}
+.tag-g{background:var(--green-bg);color:var(--green)}
+.tag-r{background:var(--red-bg);color:var(--red)}
+.bdesc{font-size:.86em;color:var(--ink-light);margin-top:7px;line-height:1.5}
+
+/* LIFECYCLE BARS */
+.lbar{display:flex;align-items:center;gap:11px;margin:9px 0}
+.llab{font-family:'DM Sans',sans-serif;font-size:.83em;font-weight:500;color:var(--ink);min-width:168px}
+.ltrack{flex:1;height:9px;background:var(--border);border-radius:5px;overflow:hidden}
+.lfill{height:100%;border-radius:5px;background:linear-gradient(90deg,var(--purple),var(--accent))}
+.lkm{font-family:'DM Sans',sans-serif;font-size:.8em;font-weight:700;color:var(--purple);min-width:72px;text-align:right}
+
+/* ROTATION DIAGRAM */
+.rflow{display:flex;align-items:stretch;margin:22px 0;border-radius:12px;border:1.5px solid var(--purple-mid);overflow:hidden}
+.rstep{flex:1;padding:15px 10px;text-align:center}
+.rstep h4{font-family:'DM Sans',sans-serif;font-size:.78em;font-weight:700;text-transform:uppercase;letter-spacing:.07em;margin-bottom:3px}
+.rshoe{font-size:1.5em;margin-bottom:5px;display:block}
+.rmod{font-size:.8em;font-family:'DM Sans',sans-serif}
+.rs-w{background:var(--purple-light)}.rs-e{background:var(--purple);color:white}.rs-e .rmod{color:var(--purple-mid)}.rs-c{background:var(--purple-light)}
+.rarr{font-size:1.3em;color:var(--purple);display:flex;align-items:center;padding:0 2px;background:white}
+.rarr-e{background:var(--purple);color:white}
+
+/* MORPH GRID */
+.mg{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:15px 0}
+.mcard{border-radius:8px;padding:13px;border:1.5px solid var(--border);background:white}
+.mcard h4{font-family:'DM Sans',sans-serif;font-weight:700;font-size:.83em;color:var(--purple-dark);margin-bottom:5px;text-transform:uppercase;letter-spacing:.04em}
+.mcard p{font-size:.83em;margin-bottom:5px;color:var(--ink-light)}
+.mok{font-family:'DM Sans',sans-serif;font-size:.78em;color:var(--green);font-weight:700}
+.mno{font-family:'DM Sans',sans-serif;font-size:.78em;color:var(--red);font-weight:700}
+
+/* CYCLE CARDS */
+.cyc-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin:18px 0}
+.cyc{border-radius:10px;padding:15px;border:1px solid transparent}
+.cyc h4{font-family:'DM Sans',sans-serif;font-weight:700;font-size:.83em;text-transform:uppercase;letter-spacing:.07em;margin-bottom:3px}
+.cyc .days{font-size:.78em;opacity:.65;margin-bottom:7px;font-family:'DM Sans',sans-serif}
+.cyc p{font-size:.86em;margin-bottom:7px}
+.cyc .rec{font-family:'DM Sans',sans-serif;font-size:.78em;font-weight:700;padding:3px 8px;border-radius:4px;display:inline-block}
+.cF{background:#E8F5E9;border-color:#A5D6A7}.cF .rec{background:#C8E6C9;color:var(--green)}
+.cO{background:#FFF8E1;border-color:#FFE082}.cO .rec{background:#FFE082;color:var(--yellow)}
+.cL{background:#FDE3EC;border-color:#F48FB1}.cL .rec{background:#F48FB1;color:#880E4F}
+.cM{background:var(--red-bg);border-color:#EF9A9A}.cM .rec{background:#EF9A9A;color:var(--red)}
+
+/* CASES GRID */
+.cases{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin:18px 0}
+.ccase{border-radius:10px;padding:15px;border:1.5px solid var(--border)}
+.ccase h4{font-family:'DM Sans',sans-serif;font-weight:700;font-size:.83em;text-transform:uppercase;letter-spacing:.04em;margin-bottom:5px}
+.ccase p{font-size:.84em;margin-bottom:6px}
+.cok{font-family:'DM Sans',sans-serif;font-size:.8em;color:var(--green);font-weight:700}
+.cno{font-family:'DM Sans',sans-serif;font-size:.8em;color:var(--red);font-weight:700}
+
+/* PROSE LIST */
+.pl{list-style:none;margin:11px 0 18px;padding:0}
+.pl li{display:flex;gap:9px;align-items:flex-start;padding:7px 0;font-size:var(--font-size);line-height:var(--line-height);color:var(--ink);border-bottom:1px solid var(--border)}
+.pl li:last-child{border-bottom:none}
+.pl li::before{content:"◆";color:var(--purple);font-size:.48em;margin-top:9px;flex-shrink:0}
+
+/* DECISION ITEMS */
+.dec{display:flex;align-items:flex-start;gap:11px;padding:11px 15px;border-radius:8px;margin:7px 0;background:var(--green-bg);border-left:3px solid var(--green)}
+.dcond{font-family:'DM Sans',sans-serif;font-weight:600;font-size:.88em;color:var(--ink);flex:1}
+.dres{font-family:'DM Sans',sans-serif;font-size:.86em;color:var(--green);font-weight:700;min-width:180px}
+
+/* ── COVER ── */
+.cover{position:relative;min-height:82vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 36px;overflow:hidden;background:linear-gradient(135deg,#3A0E4A 0%,#5A1F68 40%,#7B2D8B 70%,#9C3FB5 100%)}
+.cover-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.22;mix-blend-mode:luminosity}
+.cover-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(58,14,74,.55) 0%,rgba(90,31,104,.65) 100%)}
+.cover-body{position:relative;z-index:2}
+.clogo{font-family:'DM Sans',sans-serif;font-weight:700;font-size:.88em;letter-spacing:.24em;color:var(--purple-mid);text-transform:uppercase;margin-bottom:36px}
+.cicon{font-size:3.2em;margin-bottom:20px;display:block}
+.ctitle{font-family:'Playfair Display',serif;font-size:2.5em;font-weight:700;color:white;line-height:1.15;margin-bottom:14px}
+.ctitle em{color:var(--accent);font-style:italic}
+.csub{font-family:'Lora',serif;font-style:italic;font-size:.98em;color:rgba(255,255,255,.68);max-width:360px;line-height:1.6;margin-bottom:36px}
+.cdiv{width:75px;height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent);margin:0 auto 36px}
+.cauthor{font-family:'DM Sans',sans-serif;font-size:.86em;color:rgba(255,255,255,.55)}
+.cauthor strong{color:white}
+.cstart{margin-top:32px;padding:13px 38px;background:white;color:var(--purple-dark);border:none;border-radius:50px;font-family:'DM Sans',sans-serif;font-weight:700;font-size:.93em;cursor:pointer;transition:all .3s;letter-spacing:.04em}
+.cstart:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(0,0,0,.35)}
+
+/* ── QUIZ DE DIRECIONAMENTO ── */
+.quiz-wrap{background:linear-gradient(135deg,var(--purple-dark),var(--purple));border-radius:14px;padding:2px;margin:24px 0}
+.quiz-inner{background:var(--page-bg);border-radius:13px;overflow:hidden}
+.quiz-header{background:linear-gradient(135deg,var(--purple-dark),var(--purple));padding:22px 26px;color:white}
+.quiz-header h3{font-family:'Playfair Display',serif;font-size:1.3em;margin-bottom:5px}
+.quiz-header p{font-family:'DM Sans',sans-serif;font-size:.85em;opacity:.78;margin:0}
+.quiz-body{padding:22px 26px}
+.quiz-steps{display:flex;gap:5px;margin-bottom:20px}
+.qs-dot{width:8px;height:8px;border-radius:50%;background:var(--border);transition:all .3s;flex-shrink:0}
+.qs-dot.done{background:var(--green)}
+.qs-dot.active{background:var(--purple);width:22px;border-radius:4px}
+.qblock{display:none}
+.qblock.active{display:block;animation:fadeUp .3s ease}
+.qnum{font-family:'DM Sans',sans-serif;font-size:.8em;font-weight:700;color:var(--purple);text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px}
+.qtext{font-family:'Playfair Display',serif;font-size:1.1em;color:var(--ink);margin-bottom:16px;line-height:1.4}
+.qopts{display:flex;flex-direction:column;gap:8px}
+.qopt{display:flex;align-items:center;gap:11px;padding:12px 15px;border:1.5px solid var(--border);border-radius:9px;cursor:pointer;transition:all .2s;background:white;font-family:'DM Sans',sans-serif;font-size:.9em;color:var(--ink);user-select:none}
+.qopt:hover{border-color:var(--purple-mid);background:var(--purple-light)}
+.qopt.sel{border-color:var(--purple);background:var(--purple-light);color:var(--purple-dark);font-weight:600}
+.qopt-radio{width:17px;height:17px;border:2px solid var(--border);border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.qopt.sel .qopt-radio{border-color:var(--purple);background:var(--purple)}
+.qopt.sel .qopt-radio::after{content:'';width:6px;height:6px;background:white;border-radius:50%}
+.qopt-icon{font-size:1.2em;flex-shrink:0}
+.quiz-nav{display:flex;justify-content:flex-end;margin-top:18px}
+.qbtn{padding:11px 24px;background:var(--purple);color:white;border:none;border-radius:8px;font-family:'DM Sans',sans-serif;font-weight:700;font-size:.9em;cursor:pointer;transition:all .25s;letter-spacing:.03em}
+.qbtn:hover{background:var(--purple-dark);transform:translateY(-1px);box-shadow:0 4px 16px rgba(123,45,139,.3)}
+.qbtn:disabled{opacity:.35;cursor:not-allowed;transform:none}
+.qbtn.accent{background:linear-gradient(135deg,var(--purple),var(--accent));font-size:.95em;padding:12px 28px}
+
+/* RESULT */
+.result-wrap{display:none;animation:fadeUp .5s ease}
+.result-wrap.show{display:block}
+.res-hero{background:linear-gradient(135deg,var(--purple-dark),var(--purple));border-radius:14px;padding:26px;color:white;margin-bottom:16px;position:relative;overflow:hidden}
+.res-hero::after{content:'';position:absolute;right:-30px;top:-30px;width:180px;height:180px;border-radius:50%;background:rgba(224,64,251,.12)}
+.res-badge{font-family:'DM Sans',sans-serif;font-size:.75em;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.res-titulo{font-family:'Playfair Display',serif;font-size:1.6em;font-weight:700;margin-bottom:8px}
+.res-sub{font-family:'Lora',serif;font-style:italic;font-size:.95em;opacity:.8;line-height:1.6;margin-bottom:20px}
+.res-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.res-item{background:rgba(255,255,255,.12);border-radius:9px;padding:12px 14px}
+.res-item label{font-family:'DM Sans',sans-serif;font-size:.72em;text-transform:uppercase;letter-spacing:.1em;opacity:.65;display:block;margin-bottom:3px}
+.res-item span{font-family:'DM Sans',sans-serif;font-weight:700;font-size:.93em;line-height:1.4}
+.res-tenis{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:10px;padding:16px;margin-top:14px}
+.res-tenis-label{font-family:'DM Sans',sans-serif;font-size:.72em;text-transform:uppercase;letter-spacing:.1em;opacity:.65;margin-bottom:6px}
+.res-tenis-name{font-family:'Playfair Display',serif;font-size:1.25em;font-weight:700;color:var(--accent);margin-bottom:4px}
+.res-tenis-why{font-family:'DM Sans',sans-serif;font-size:.85em;opacity:.82;line-height:1.5}
+.res-restart{display:block;width:100%;margin-top:12px;padding:10px;background:rgba(255,255,255,.15);border:1.5px solid rgba(255,255,255,.3);border-radius:8px;color:white;font-family:'DM Sans',sans-serif;font-size:.85em;cursor:pointer;transition:all .2s;letter-spacing:.03em}
+.res-restart:hover{background:rgba(255,255,255,.25)}
+
+/* BOTTOM NAV */
+.bnav{display:flex;align-items:center;justify-content:space-between;padding:18px 54px 24px 60px;border-top:1px solid var(--border);background:var(--page-bg)}
+.nbtn{display:flex;align-items:center;gap:7px;padding:9px 18px;border-radius:8px;border:1.5px solid var(--border);background:none;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:.88em;color:var(--ink-light);transition:all .2s}
+.nbtn:hover:not(:disabled){border-color:var(--purple);color:var(--purple);background:var(--purple-light)}
+.nbtn:disabled{opacity:.28;cursor:not-allowed}
+.nbtn.pri{background:var(--purple);border-color:var(--purple);color:white}
+.nbtn.pri:hover:not(:disabled){background:var(--purple-dark)}
+.pind{font-family:'DM Sans',sans-serif;font-size:.83em;color:var(--ink-light);display:flex;flex-direction:column;align-items:center;gap:3px}
+.mrdbtn{display:flex;align-items:center;gap:5px;padding:5px 11px;border-radius:6px;border:1.5px solid var(--border);background:none;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:.78em;color:var(--ink-light);transition:all .2s}
+.mrdbtn.on{border-color:var(--green);color:var(--green);background:var(--green-bg)}
+.mrdbtn:hover{border-color:var(--green);color:var(--green)}
+
+/* HOME FLOAT */
+.hbtn{position:fixed;bottom:22px;right:22px;width:42px;height:42px;border-radius:50%;background:var(--purple);color:white;border:none;cursor:pointer;font-size:1.15em;box-shadow:0 4px 18px rgba(123,45,139,.42);transition:all .2s;display:flex;align-items:center;justify-content:center;z-index:250}
+.hbtn:hover{transform:scale(1.1);background:var(--purple-dark)}
+
+/* RESPONSIVE */
+@media(max-width:580px){.content{padding:26px 22px 26px 28px}.bnav{padding:14px 22px 18px 28px}.topnav{padding:9px 14px 9px 20px}h1{font-size:1.75em}.g2,.mg,.cyc-grid,.cases,.res-grid{grid-template-columns:1fr}:root{--max-w:100%}.g3{grid-template-columns:1fr}.rflow{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="shell">
+<div class="prog-wrap"><div class="prog-fill" id="PB" style="width: 0%;"></div></div>
+<div class="topnav">
+  <div class="brand">B◉S Performance</div>
+  <div class="nav-right">
+    <span class="pill" id="PInd">0/16 lidas</span>
+    <button class="fbtn" onclick="fz(-1)">A−</button>
+    <button class="fbtn" onclick="fz(1)">A+</button>
+    <button class="mbtn" onclick="tmenu()" title="Capítulos">☰</button>
+  </div>
+  <div class="cmenu" id="CM">
+    <div class="cmenu-hd">Capítulos</div>
+    <div id="MI"><div class="mitem active" onclick="gp(0);tmenu()"><span class="mnum">00</span><span>Capa</span></div><div class="mitem " onclick="gp(1);tmenu()"><span class="mnum">01</span><span>Introdução</span></div><div class="mitem " onclick="gp(2);tmenu()"><span class="mnum">02</span><span>Cap 1: Como o tênis influencia sua corrida</span></div><div class="mitem " onclick="gp(3);tmenu()"><span class="mnum">03</span><span>Cap 2: Amortecimento, Estabilidade e Responsividade</span></div><div class="mitem " onclick="gp(4);tmenu()"><span class="mnum">04</span><span>Cap 3: Drop — o que é e como funciona</span></div><div class="mitem " onclick="gp(5);tmenu()"><span class="mnum">05</span><span>Cap 4: Pisada pronada, supinada e neutra</span></div><div class="mitem " onclick="gp(6);tmenu()"><span class="mnum">06</span><span>Cap 5: Tênis para iniciantes</span></div><div class="mitem " onclick="gp(7);tmenu()"><span class="mnum">07</span><span>Cap 6: Provas curtas — 5km e 10km</span></div><div class="mitem " onclick="gp(8);tmenu()"><span class="mnum">08</span><span>Cap 7: Meia maratona e maratona</span></div><div class="mitem " onclick="gp(9);tmenu()"><span class="mnum">09</span><span>Cap 8: Treino diário vs performance</span></div><div class="mitem " onclick="gp(10);tmenu()"><span class="mnum">10</span><span>Cap 9: Encontre seu tênis ideal (Quiz)</span></div><div class="mitem " onclick="gp(11);tmenu()"><span class="mnum">11</span><span>Cap 10: Durabilidade do tênis</span></div><div class="mitem " onclick="gp(12);tmenu()"><span class="mnum">12</span><span>Cap 11: Erros mais comuns</span></div><div class="mitem " onclick="gp(13);tmenu()"><span class="mnum">13</span><span>Cap 12: Rotação de tênis</span></div><div class="mitem " onclick="gp(14);tmenu()"><span class="mnum">14</span><span>Bônus: Ciclo menstrual e frouxidão</span></div><div class="mitem " onclick="gp(15);tmenu()"><span class="mnum">15</span><span>Casos específicos</span></div><div class="mitem " onclick="gp(16);tmenu()"><span class="mnum">16</span><span>Encerramento</span></div></div>
+  </div>
+</div>
+<div id="PW">
+<div class="page active" data-page="0"><div class="cover">
+  <img class="cover-img" src="./Guia Completo de Tênis de Corrida — BOS Performance_files/photo-1542291026-7eec264c27ff" alt="Tênis de corrida">
+  <div class="cover-overlay"></div>
+  <div class="cover-body">
+    <div class="clogo">B◉S Performance</div>
+    <span class="cicon">👟</span>
+    <h1 class="ctitle">Guia Completo de<br><em>Tênis de Corrida</em></h1>
+    <p class="csub">Aprenda a escolher o tênis ideal para o seu tipo de corrida, objetivo e perfil</p>
+    <div class="cdiv"></div>
+    <div class="cauthor">Por <strong>Taynara Cunha</strong><br>Head Coach · BOS Performance</div>
+    <button class="cstart" onclick="gp(1)">Começar a ler →</button>
+  </div>
+</div>
+</div>
+<div class="page" data-page="1"><div class="content"><div class="read-badge" id="RB-1">✓ Lida</div><div class="cap-label">Introdução</div><h1>Por que o <em>tênis certo</em> importa tanto?</h1><div class="divider"></div><div style="position:relative;width:100%;height:220px;border-radius:12px;overflow:hidden;margin:20px 0;">
+<img src="./Guia Completo de Tênis de Corrida — BOS Performance_files/photo-1594882645126-14020914d58d" alt="Mulher correndo" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+<div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(90,31,104,0.18),rgba(26,26,46,0.55));"></div>
+</div><p class="lead">Existe uma crença comum de que qualquer tênis serve para correr. Esta crença custa lesões, tempo de recuperação e, muitas vezes, o fim prematuro de uma jornada no esporte.</p><p>O tênis de corrida não é apenas um acessório. Ele é a interface entre o seu corpo e o chão — e cada milímetro de diferença em sua construção tem impacto direto na biomecânica da sua passada, na carga sobre suas articulações e no risco de lesão.</p><p>Neste guia, você vai entender tudo o que precisa saber para escolher, usar, cuidar e extrair o máximo do seu tênis. Sem jargão técnico desnecessário, sem indicação genérica.</p><h2>Mitos que precisam acabar</h2><div class="alert al-r"><div class="ai">🚫</div><div class="ab"><strong>"Tênis caro é sempre melhor."</strong> Falso. O tênis mais caro do mundo pode ser o errado para o seu perfil. Um Alphafly nas pernas erradas causa mais lesão do que um Pegasus nas pernas certas.</div></div><div class="alert al-r"><div class="ai">🚫</div><div class="ab"><strong>"Um tênis serve para tudo."</strong> Falso. Tênis de tiro usado em longões desgasta em metade do tempo e sobrecarrega estruturas que deveriam estar em recuperação.</div></div><div class="alert al-r"><div class="ai">🚫</div><div class="ab"><strong>"Pronação sempre precisa ser corrigida."</strong> Falso. Pronação leve é normal e fisiológica. O problema é quando ela é excessiva e não compensada.</div></div><div class="alert al-g"><div class="ai">✅</div><div class="ab"><strong>A verdade:</strong> o tênis certo para você é aquele que respeita sua morfologia, seu nível de treino, seu objetivo e o seu momento do mês. Vamos chegar lá juntas.</div></div></div></div>
+<div class="page" data-page="2"><div class="content"><div class="read-badge" id="RB-2">✓ Lida</div><div class="cap-label">Capítulo 1</div><h1>Como um tênis <em>influencia</em> sua corrida</h1><div class="divider"></div><p class="lead">A cada passada, seu corpo absorve entre 2,5 e 3 vezes o seu peso corporal em impacto. Em uma corrida de 10km com passada média de 90 passos/minuto, são mais de 9.000 impactos. O tênis está presente em todos eles.</p><div style="position:relative;width:100%;height:200px;border-radius:12px;overflow:hidden;margin:20px 0;">
+<img src="./Guia Completo de Tênis de Corrida — BOS Performance_files/photo-1461896836934-ffe607ba8211" alt="Corrida na rua" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+<div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(90,31,104,0.18),rgba(26,26,46,0.55));"></div>
+</div><h2>Os 5 papéis do tênis na corrida</h2><ul class="pl"><li><strong>Amortecimento:</strong> absorve o impacto do pouso, reduzindo a carga sobre joelhos, quadril e coluna.</li><li><strong>Propulsão:</strong> tênis responsivos devolvem parte da energia absorvida, ajudando na impulsão — especialmente importantes em tiros e provas.</li><li><strong>Estabilidade:</strong> controla excessos de movimento medial e lateral, especialmente relevante para pronação e supinação.</li><li><strong>Proteção:</strong> protege o pé de superfícies irregulares, temperatura e elementos externos.</li><li><strong>Guia biomecânico:</strong> influencia ativamente a forma como você pousa — o drop, a rigidez e a geometria da sola moldam sua passada.</li></ul><div class="alert al-p"><div class="ai">📌</div><div class="ab"><strong>Conceito essencial:</strong> não existe tênis neutro. Todo tênis influencia sua biomecânica de alguma forma. A questão é se essa influência é favorável ou desfavorável para o seu perfil específico.</div></div><h2>O que muda com o tênis errado</h2><div class="g2"><div class="bcard"><div class="bname">Curto prazo</div><p class="bdesc">Desconforto, bolhas, formigamento nos dedos, dor nos pés, fadiga precoce da panturrilha e sensação de impacto excessivo.</p></div><div class="bcard"><div class="bname">Médio prazo</div><p class="bdesc">Canelite, fascite plantar, tendinopatia do Aquiles, síndrome da banda iliotibial, dor patelar.</p></div><div class="bcard"><div class="bname">Longo prazo</div><p class="bdesc">Lesões de estresse, condromalácia patelar, deformidades progressivas como agravamento de joanete e neuroma.</p></div><div class="bcard"><div class="bname" style="color:var(--green)">Com o tênis certo ✓</div><p class="bdesc">Menos lesões, mais quilômetros, evolução consistente, maior confiança e prazer em correr. Esse é o objetivo.</p></div></div></div></div>
+<div class="page" data-page="3"><div class="content"><div class="read-badge" id="RB-3">✓ Lida</div><div class="cap-label">Capítulo 2</div><h1>Amortecimento, Estabilidade<br>e <em>Responsividade</em></h1><div class="divider"></div><p class="lead">Estes três termos são frequentemente confundidos — e escolher o errado pode custar lesões ou desempenho perdido. Vamos resolver isso de vez.</p><h2>Amortecimento</h2><p>É a capacidade do tênis de absorver o impacto do contato com o chão. Determinado principalmente pela espessura e pelo tipo de espuma da entressola (<em>stack height</em>). Mais amortecimento = mais proteção, porém menos sensação do solo.</p><div class="card cp"><strong>Quando priorizar amortecimento alto:</strong><p>Corridas longas (21km+), corredoras acima de 80kg, histórico de joelho, fase lútea e menstruação, iniciantes e transição de lesão.</p></div><h2>Estabilidade</h2><p>É a capacidade do tênis de controlar os movimentos excessivos do pé — especialmente a pronação medial (pé caindo para dentro). Tênis de estabilidade têm materiais mais rígidos no lado interno da entressola, que resistem ao colapso do arco.</p><div class="alert al-y"><div class="ai">⚠️</div><div class="ab"><strong>Atenção:</strong> estabilidade em excesso para quem não precisa é prejudicial. Forçar um pé neutro a trabalhar com controle de movimento pode criar compensações e lesões.</div></div><h2>Responsividade</h2><p>É a capacidade da espuma de devolver energia — como uma mola. Espumas responsivas (ZoomX, Lightstrike Pro, PWRRUN PB) retornam parte da energia absorvida no impacto, reduzindo o custo metabólico da corrida.</p><table class="t"><tbody><tr><th>Característica</th><th>Amortecimento</th><th>Estabilidade</th><th>Responsividade</th></tr><tr><td>Benefício principal</td><td>Proteção articular</td><td>Controle de pronação</td><td>Economia de energia</td></tr><tr><td>Ideal para</td><td>Volume, lesões, pós-parto</td><td>Pronação excessiva</td><td>Tiros e provas</td></tr><tr><td>Cuidado</td><td>Pode esconder feedback</td><td>Não use sem necessidade</td><td>Exige adaptação muscular</td></tr></tbody></table><img src="./Guia Completo de Tênis de Corrida — BOS Performance_files/photo-1491553895911-0055eca6402d" alt="Tênis de corrida" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:10px;margin:16px 0;"></div></div>
+<div class="page" data-page="4"><div class="content"><div class="read-badge" id="RB-4">✓ Lida</div><div class="cap-label">Capítulo 3</div><h1>Drop: o que é e<br>como <em>funciona</em></h1><div class="divider"></div><p class="lead">Drop é talvez o conceito mais mal compreendido no mundo do tênis de corrida. E um dos que mais impacta o risco de lesão quando ignorado.</p><h2>A definição simples</h2><p>Drop é a diferença de altura entre o calcanhar e a ponta do tênis. Um tênis com drop de 10mm tem o calcanhar 10mm mais alto que o antepé. Simples assim.</p><div style="display:flex;gap:14px;margin:20px 0;flex-wrap:wrap;">
+<div style="flex:1;min-width:110px;text-align:center;padding:14px;background:var(--purple-light);border-radius:10px;border-left:4px solid var(--purple)">
+  <div style="font-size:1.5em;margin-bottom:6px">🥾</div>
+  <strong style="font-family:DM Sans,sans-serif;font-size:.82em;color:var(--purple)">Drop Alto</strong>
+  <p style="font-size:.8em;margin-top:5px;margin-bottom:0">8–12mm<br><span style="color:var(--ink-light)">Calcanhar elevado<br>Menos exigência do Aquiles<br>Ideal para iniciantes</span></p>
+</div>
+<div style="flex:1;min-width:110px;text-align:center;padding:14px;background:var(--purple-light);border-radius:10px;border-left:4px solid #9C27B0;opacity:.88">
+  <div style="font-size:1.5em;margin-bottom:6px">👟</div>
+  <strong style="font-family:DM Sans,sans-serif;font-size:.82em;color:#9C27B0">Drop Médio</strong>
+  <p style="font-size:.8em;margin-top:5px;margin-bottom:0">6–8mm<br><span style="color:var(--ink-light)">Equilíbrio<br>Versatilidade<br>Intermediária</span></p>
+</div>
+<div style="flex:1;min-width:110px;text-align:center;padding:14px;background:var(--purple-light);border-radius:10px;border-left:4px solid var(--purple-mid);opacity:.7">
+  <div style="font-size:1.5em;margin-bottom:6px">🥿</div>
+  <strong style="font-family:DM Sans,sans-serif;font-size:.82em;color:var(--purple-mid)">Drop Baixo</strong>
+  <p style="font-size:.8em;margin-top:5px;margin-bottom:0">0–4mm<br><span style="color:var(--ink-light)">Exige Aquiles forte<br>Adaptação obrigatória<br>Avançada</span></p>
+</div>
+</div><h2>O que o drop muda na prática</h2><p><strong>Drop alto (8–12mm):</strong> facilita o pouso no calcanhar. Reduz a exigência sobre o Aquiles e a panturrilha. Ideal para iniciantes, volume alto e período pré/menstrual.</p><p><strong>Drop baixo (0–4mm):</strong> estimula o pouso mais à frente do pé. Exige musculatura de panturrilha e Aquiles muito desenvolvida. A transição precisa ser feita em semanas — nunca de uma vez.</p><div class="alert al-r"><div class="ai">🚨</div><div class="ab"><strong>Erro comum:</strong> trocar de um tênis com 10mm de drop para um com 4mm do dia para a noite. Isso gera sobrecarga aguda no Aquiles e é uma das causas mais comuns de tendinopatia em corredoras que "estavam indo bem".</div></div><div class="alert al-p"><div class="ai">📌</div><div class="ab"><strong>Regra BOS:</strong> qualquer mudança de drop maior que 4mm deve ser feita com transição de pelo menos 4 a 6 semanas, alternando os dois pares progressivamente.</div></div><img src="./Guia Completo de Tênis de Corrida — BOS Performance_files/photo-1595950653106-6c9ebd614d3a" alt="Sola de tênis" loading="lazy" style="width:100%;height:160px;object-fit:cover;border-radius:10px;margin:16px 0;"></div></div>
+<div class="page" data-page="5"><div class="content"><div class="read-badge" id="RB-5">✓ Lida</div><div class="cap-label">Capítulo 4</div><h1>Pisada pronada, supinada e neutra:<br>o que <em>realmente importa</em></h1><div class="divider"></div><p class="lead">A análise de pisada virou quase um ritual na compra de tênis. Mas ela conta apenas parte da história — e às vezes a menos importante.</p><table class="t"><tbody><tr><th>Tipo</th><th>O que acontece</th><th>É problema?</th><th>Tênis ideal</th></tr><tr><td>Neutro</td><td>Pé pousa e rola de forma equilibrada</td><td>Não. É o ideal.</td><td>Tênis neutros com bom amortecimento</td></tr><tr><td>Pronado</td><td>Pé cai excessivamente para dentro</td><td>Se excessivo, sim</td><td>Stability ou motion control</td></tr><tr><td>Supinado</td><td>Pé cai para fora — menos comum</td><td>Se acentuado, sim</td><td>Neutro com amortecimento lateral</td></tr></tbody></table><h2>Como descobrir sua pisada em casa — 3 testes</h2><div class="g2"><div class="bcard"><div class="bname">🔍 Teste do Solado</div><p class="bdesc">Olhe a sola do seu tênis usado. Desgaste medial (lado de dentro) → pronação. Desgaste uniforme → neutro. Desgaste lateral → supinação.</p></div><div class="bcard"><div class="bname">💧 Teste do Pé Molhado</div><p class="bdesc">Molhe o pé e pise em papel. Impressão preenchida → pé plano. Arco médio visível → neutro. Arco muito marcado → pé cavo/supinação.</p></div><div class="bcard"><div class="bname">🦵 Agachamento Unipodal</div><p class="bdesc">Agache num pé só no espelho. Joelho cai para dentro → pronação funcional. Joelho alinhado → bom controle. Joelho vai para fora → supinação.</p></div><div class="bcard"><div class="bname">📐 Além da Pisada</div><p class="bdesc">Formato do pé (largo, estreito, joanete), altura do arco, histórico de lesão e fase do ciclo menstrual são igualmente — às vezes mais — importantes.</p></div></div><div class="alert al-y"><div class="ai">⚠️</div><div class="ab"><strong>Importante:</strong> pronação leve a moderada é fisiológica e não precisa ser corrigida com tênis de controle em todos os casos. Fortalecimento do pé e da cadeia posterior pode ser mais eficaz e menos restritivo do que um tênis de estabilidade pesado.</div></div><img src="./Guia Completo de Tênis de Corrida — BOS Performance_files/photo-1571008887538-b36bb32f4571" alt="Corrida em trilha" loading="lazy" style="width:100%;height:170px;object-fit:cover;border-radius:10px;margin:16px 0;"></div></div>
+<div class="page" data-page="6"><div class="content"><div class="read-badge" id="RB-6">✓ Lida</div><div class="cap-label">Capítulo 5</div><h1>Tênis para <em>iniciantes</em></h1><div class="divider"></div><p class="lead">A escolha do primeiro tênis sério é uma das mais importantes da jornada na corrida. Errar aqui pode resultar em lesão antes mesmo de a base estar construída.</p><div style="position:relative;width:100%;height:190px;border-radius:12px;overflow:hidden;margin:20px 0;">
+<img src="./Guia Completo de Tênis de Corrida — BOS Performance_files/photo-1594882645126-14020914d58d" alt="Mulher iniciante correndo" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+<div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(90,31,104,0.18),rgba(26,26,46,0.55));"></div>
+</div><h2>O que priorizar no começo</h2><ul class="pl"><li><strong>Amortecimento generoso:</strong> a musculatura ainda está adaptando. O tênis precisa proteger mais do que o corpo consegue fazer por conta própria.</li><li><strong>Drop alto (8–12mm):</strong> favorece o pouso natural de quem está aprendendo, reduzindo carga sobre Aquiles e panturrilha.</li><li><strong>Durabilidade:</strong> no início, o volume de treino cresce rápido. Um tênis durável (600km+) é mais econômico a longo prazo.</li><li><strong>Conforto acima de tudo:</strong> se dói ou aperta no primeiro uso, não melhora com o tempo. Conforto imediato é não negociável.</li><li><strong>Sem placa de carbono:</strong> exige musculatura e biomecânica desenvolvidas. Para iniciantes, é excesso de tecnologia com risco de lesão.</li></ul><h2>Indicações por orçamento</h2><div class="dec"><div class="dcond">Até R$400 — para começar</div><div class="dres">Olympikus Corre 24, Asics GT-1000</div></div><div class="dec"><div class="dcond">R$400–700 — melhor faixa de entrada</div><div class="dres">Asics Gel-Cumulus 26, Nike Pegasus 41, Mizuno Wave Rider 28</div></div><div class="dec"><div class="dcond">R$700–1.000 — excelência em rodagem</div><div class="dres">Asics Gel-Nimbus 26, Hoka Clifton 9, Brooks Ghost 16</div></div><div class="alert al-g"><div class="ai">✅</div><div class="ab"><strong>Recomendação BOS:</strong> Asics Gel-Cumulus 26, Nike Pegasus 41 ou Adidas Ultraboost 24. Os três são confiáveis, duráveis e estão na faixa de R$600–950.</div></div><h2>Morfologia do pé — muito importante</h2><div class="mg"><div class="mcard"><h4>Joanete / Pé Largo</h4><p>Toe box largo obrigatório. Evitar bico afilado.</p><div class="mok">✅ Hoka, Nike Pegasus, Adidas Ultraboost</div><div class="mno">❌ Asics, Mizuno (last estreita)</div></div><div class="mcard"><h4>Pé Estreito</h4><p>Last estreita para melhor encaixe e controle.</p><div class="mok">✅ Asics, Mizuno</div></div><div class="mcard"><h4>Pé Plano</h4><p>Suporte de arco. Diferenciar estrutural de funcional.</p><div class="mok">✅ Brooks Adrenaline, Asics GT-2000</div></div><div class="mcard"><h4>Pé Cavo (arco alto)</h4><p>Amortecimento lateral. Tendência à supinação.</p><div class="mok">✅ Hoka Clifton, Brooks Ghost</div></div></div></div></div>
+<div class="page" data-page="7"><div class="content"><div class="read-badge" id="RB-7">✓ Lida</div><div class="cap-label">Capítulo 6</div><h1>Tênis para provas curtas:<br><em>5km e 10km</em></h1><div class="divider"></div><p class="lead">Provas curtas pedem velocidade. Mas velocidade não significa necessariamente o tênis mais leve ou mais caro — significa o tênis certo para o seu nível de velocidade.</p><div style="position:relative;width:100%;height:200px;border-radius:12px;overflow:hidden;margin:20px 0;">
+<img src="./Guia Completo de Tênis de Corrida — BOS Performance_files/photo-1513593771513-7b58b6c4af38" alt="Largada de corrida" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+<div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(90,31,104,0.18),rgba(26,26,46,0.55));"></div>
+</div><h2>Opções por nível e orçamento</h2>
+<table class="t">
+<tbody><tr><th>Nível</th><th>Tênis</th><th>Características</th><th>Preço</th></tr>
+<tr><td rowspan="2" style="vertical-align:middle">Iniciante</td><td>Olympikus Corre 24</td><td>Nacional, drop 10mm, durável — melhor entrada</td><td>R$250–380</td></tr>
+<tr><td>Nike Pegasus 41</td><td>Versátil, ReactX, confiável — upgrade de qualidade</td><td>R$700–900</td></tr>
+<tr><td rowspan="2" style="vertical-align:middle">Intermediária</td><td>Adidas Adizero SL</td><td>Leve, responsivo, sem placa — ótimo custo-benefício</td><td>R$700–950</td></tr>
+<tr><td>Adidas Adizero Boston 12</td><td>Meia-placa carbono + Lightstrike Pro — para quem quer evoluir</td><td>R$900–1.200</td></tr>
+<tr><td rowspan="2" style="vertical-align:middle">Avançada</td><td>Nike Vaporfly 3</td><td>Carbono completo, estável — referência para 5-10K</td><td>R$1.800–2.200</td></tr>
+<tr><td>Adidas Adizero Adios Pro 3</td><td>Carbono + varetas — alternativa sólida ao Nike</td><td>R$1.600–2.000</td></tr>
+</tbody></table>
+<div class="alert al-b"><div class="ai">ℹ️</div><div class="ab"><strong>E o Olympikus para prova?</strong> O Olympikus Pro X (R$500–700) tem meia-placa de nylon e funciona bem para quem quer experiência de performance sem custo elevado. Não tem carbono, mas cumpre o papel para iniciantes na primeira prova.</div></div><div class="alert al-p"><div class="ai">📌</div><div class="ab"><strong>Sobre a placa de carbono em provas curtas:</strong> em 5km, a diferença de tempo com carbono pode ser de 30 segundos a 2 minutos. Mas se você ainda está desenvolvendo a base, o carbono pode atrapalhar mais do que ajudar.</div></div><div class="alert al-r"><div class="ai">🚨</div><div class="ab"><strong>Nunca estreie o tênis de prova no dia da corrida.</strong> Use-o em pelo menos 3–4 treinos antes. O corpo precisa adaptar a biomecânica ao tênis — especialmente se tiver placa de carbono.</div></div><div class="card cg"><strong>🎯 Para a maioria das alunas BOS na primeira prova de 5K ou 10K:</strong><p style="margin-top:8px">Use o tênis que você já treina. Você está adaptada a ele. Isso vale mais do que qualquer tecnologia nova no dia da prova.</p></div></div></div>
+<div class="page" data-page="8"><div class="content"><div class="read-badge" id="RB-8">✓ Lida</div><div class="cap-label">Capítulo 7</div><h1>Tênis para <em>meia maratona</em><br>e maratona</h1><div class="divider"></div><p class="lead">Nas distâncias longas, a equação muda: velocidade ainda importa, mas conforto, amortecimento e durabilidade ao longo de horas de corrida passam a ser igualmente críticos.</p><div style="position:relative;width:100%;height:200px;border-radius:12px;overflow:hidden;margin:20px 0;">
+<img src="./Guia Completo de Tênis de Corrida — BOS Performance_files/photo-1530137073521-8a2d9e0d65cf" alt="Maratona" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+<div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(90,31,104,0.18),rgba(26,26,46,0.55));"></div>
+</div><h2>O desafio das distâncias longas</h2><p>A partir dos 15km, a fadiga muscular começa a alterar a forma de correr. A passada fica menos eficiente, o pouso mais pesado. Um tênis que funciona bem nos primeiros 10km pode virar um problema nos últimos 5km de uma meia maratona.</p><h2>Comparativo de modelos para longa distância</h2><div class="g2">
+<div class="bcard"><div class="bname">Nike</div><div class="bmodel">Vaporfly 3</div><span class="tag">5K–21K</span><span class="tag tag-g">Carbono</span><p class="bdesc">Mais estável que o Alphafly. Meu favorito para quem estreia no carbono em meias maratonas. A referência do mercado.</p></div>
+<div class="bcard"><div class="bname">Nike</div><div class="bmodel">Alphafly 3</div><span class="tag">21K–42K</span><span class="tag tag-g">Carbono</span><p class="bdesc">O mais rápido do mundo. Exige alto volume de treino e adaptação. Somente para quem já correu com carbono por 6+ meses.</p></div>
+<div class="bcard"><div class="bname">Adidas</div><div class="bmodel">Adizero Adios Pro 3</div><span class="tag">10K–42K</span><span class="tag tag-g">Carbono</span><p class="bdesc">5 varetas de carbono + Lightstrike Pro. Alternativa sólida ao Nike, sensação de pisada mais firme. Ótimo custo-benefício no carbono.</p></div>
+<div class="bcard"><div class="bname">Adidas</div><div class="bmodel">Adizero Boston 12</div><span class="tag">5K–21K</span><span class="tag">Meia-placa</span><p class="bdesc">Não é carbono completo, mas é o melhor custo-benefício para intermediárias. Meia-placa + Lightstrike Pro. Excelente para meia maratona.</p></div>
+<div class="bcard"><div class="bname">Asics</div><div class="bmodel">Metaspeed Sky+</div><span class="tag">21K–42K</span><span class="tag">Passadoras</span><p class="bdesc">Para atletas com pisada no metatarso. Geometria única. Exige passada técnica desenvolvida.</p></div>
+<div class="bcard"><div class="bname">Olympikus</div><div class="bmodel">Pro X</div><span class="tag">5K–21K</span><span class="tag" style="background:#FFF8E1;color:#F57F17">Econômico</span><p class="bdesc">A aposta nacional. Meia-placa de nylon, leve e responsivo. Para quem quer experiência de performance sem investimento alto.</p></div>
+</div><div class="alert al-p"><div class="ai">📌</div><div class="ab"><strong>Na BOS:</strong> antes de se inscrever em qualquer prova de 21km ou 42km, me consulte. O tênis faz parte da estratégia de prova e precisa ser decidido junto com o planejamento.</div></div></div></div>
+<div class="page" data-page="9"><div class="content"><div class="read-badge" id="RB-9">✓ Lida</div><div class="cap-label">Capítulo 8</div><h1>Treino diário vs tênis de <em>performance</em></h1><div class="divider"></div><p class="lead">Esta é uma das distinções mais importantes — e mais ignoradas — no universo do tênis de corrida. Confundir os dois papéis é um dos erros mais caros que uma corredora pode cometer.</p><h2>Treino diário: o cavalo de batalha</h2><p>O tênis de rodagem precisa ser durável, confortável, protetor e <em>forgiving</em>. Ele vai absorver a maioria dos km da sua temporada: longões, treinos em Z2, regenerativos.</p><div class="card cp"><strong>Características do bom tênis de rodagem:</strong><p>Stack alta (30–40mm), drop médio a alto (8–12mm), espuma durável (EVA ou FF Blast+), sem placa de carbono, vida útil de 600–900km. Exemplos: Gel-Nimbus, Clifton, Ghost, Ride 17.</p></div><h2>Performance: a arma para os dias certos</h2><p>O tênis de performance é usado em treinos de qualidade (tiros, fartlek, tempo runs) e em provas. A construção mais leve e as espumas responsivas se desgastam mais rápido e exigem mais do sistema músculo-tendínoso.</p><div class="card cpaper"><strong>Características do tênis de performance:</strong><p>Mais leve, espuma responsiva (às vezes PEBA), meia-placa ou placa completa, vida útil de 300–500km. Exemplos: Boston 12/13, Kinvara, Endorphin Speed, Vaporfly, Endorphin Pro.</p></div><div class="alert al-r"><div class="ai">🚨</div><div class="ab"><strong>O erro mais comum:</strong> usar o tênis de prova ou de tiro no treino inteiro. O Adidas Boston 13 é excelente nos tiros mas machuca em corrida leve — a placa não foi feita para operar em ritmo lento. Use rodagem no aquecimento e desaquecimento.</div></div><div class="alert al-g"><div class="ai">✅</div><div class="ab"><strong>A regra:</strong> se você só pode ter um par, compre rodagem. Se pode ter dois, o segundo é de performance. Nunca o contrário.</div></div><img src="./Guia Completo de Tênis de Corrida — BOS Performance_files/photo-1517836357463-d25dfeac3438" alt="Força e treino" loading="lazy" style="width:100%;height:170px;object-fit:cover;border-radius:10px;margin:16px 0;"></div></div>
+<div class="page" data-page="10"><div class="content"><div class="read-badge" id="RB-10">✓ Lida</div><div class="cap-label">Capítulo 9 · Interativo</div><h1>Encontre o seu<br><em>tênis ideal</em></h1><div class="divider"></div><p class="lead">Responda 6 perguntas e descubra qual modelo é o mais indicado para o seu perfil hoje. As respostas consideram seu nível, objetivo, morfologia e orçamento.</p><div style="position:relative;width:100%;height:180px;border-radius:12px;overflow:hidden;margin:20px 0;">
+<img src="./Guia Completo de Tênis de Corrida — BOS Performance_files/photo-1476480862126-209bfaa8edc8" alt="Encontrando o tênis ideal" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+<div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(90,31,104,0.18),rgba(26,26,46,0.55));"></div>
+</div>
+<div class="quiz-wrap">
+<div class="quiz-inner">
+<div class="quiz-header">
+  <h3>🎯 Qual é o seu tênis ideal?</h3>
+  <p>6 perguntas · resultado personalizado com modelo específico</p>
+</div>
+<div class="quiz-body">
+  <div class="quiz-steps" id="QSteps"><div class="qs-dot active" id="QD1"></div><div class="qs-dot " id="QD2"></div><div class="qs-dot " id="QD3"></div><div class="qs-dot " id="QD4"></div><div class="qs-dot " id="QD5"></div><div class="qs-dot " id="QD6"></div></div>
+
+  <!-- Q1 -->
+  <div class="qblock active" id="QB1">
+    <div class="qnum">Pergunta 1 de 6</div>
+    <div class="qtext">Há quanto tempo você corre com regularidade?</div>
+    <div class="qopts" id="QO1">
+      <div class="qopt" onclick="pick(1,0,&#39;iniciante&#39;)"><div class="qopt-radio"></div><span class="qopt-icon">🌱</span>Estou começando agora (menos de 6 meses)</div>
+      <div class="qopt" onclick="pick(1,1,&#39;intermediaria&#39;)"><div class="qopt-radio"></div><span class="qopt-icon">🏃</span>Corro há 6 meses a 2 anos</div>
+      <div class="qopt" onclick="pick(1,2,&#39;avancada&#39;)"><div class="qopt-radio"></div><span class="qopt-icon">🏆</span>Corro há mais de 2 anos</div>
+    </div>
+    <div class="quiz-nav"><button class="qbtn" id="QN1" onclick="next(1)" disabled="">Próxima →</button></div>
+  </div>
+
+  <!-- Q2 -->
+  <div class="qblock" id="QB2">
+    <div class="qnum">Pergunta 2 de 6</div>
+    <div class="qtext">Qual é o seu principal objetivo agora?</div>
+    <div class="qopts" id="QO2">
+      <div class="qopt" onclick="pick(2,0,&#39;saude&#39;)"><div class="qopt-radio"></div><span class="qopt-icon">💚</span>Saúde, bem-estar e manter o peso</div>
+      <div class="qopt" onclick="pick(2,1,&#39;primeira_prova&#39;)"><div class="qopt-radio"></div><span class="qopt-icon">🎽</span>Completar minha primeira prova (5K ou 10K)</div>
+      <div class="qopt" onclick="pick(2,2,&#39;tempo&#39;)"><div class="qopt-radio"></div><span class="qopt-icon">⏱️</span>Melhorar meu tempo e ganhar performance</div>
+      <div class="qopt" onclick="pick(2,3,&#39;longa&#39;)"><div class="qopt-radio"></div><span class="qopt-icon">🗺️</span>Correr distâncias longas (meia maratona ou mais)</div>
+    </div>
+    <div class="quiz-nav"><button class="qbtn" id="QN2" onclick="next(2)" disabled="">Próxima →</button></div>
+  </div>
+
+  <!-- Q3 -->
+  <div class="qblock" id="QB3">
+    <div class="qnum">Pergunta 3 de 6</div>
+    <div class="qtext">Como é o formato do seu pé?</div>
+    <div class="qopts" id="QO3">
+      <div class="qopt" onclick="pick(3,0,&#39;normal&#39;)"><div class="qopt-radio"></div><span class="qopt-icon">👣</span>Normal — sem particularidades que eu saiba</div>
+      <div class="qopt" onclick="pick(3,1,&#39;largo&#39;)"><div class="qopt-radio"></div><span class="qopt-icon">🦶</span>Pé largo ou tenho joanete</div>
+      <div class="qopt" onclick="pick(3,2,&#39;estreito&#39;)"><div class="qopt-radio"></div><span class="qopt-icon">👠</span>Pé estreito e fino</div>
+      <div class="qopt" onclick="pick(3,3,&#39;lesao&#39;)"><div class="qopt-radio"></div><span class="qopt-icon">🩹</span>Tenho histórico de lesão (joelho, Aquiles, fascite...)</div>
+    </div>
+    <div class="quiz-nav"><button class="qbtn" id="QN3" onclick="next(3)" disabled="">Próxima →</button></div>
+  </div>
+
+  <!-- Q4 -->
+  <div class="qblock" id="QB4">
+    <div class="qnum">Pergunta 4 de 6</div>
+    <div class="qtext">Com que frequência você treina por semana?</div>
+    <div class="qopts" id="QO4">
+      <div class="qopt" onclick="pick(4,0,&#39;1_2&#39;)"><div class="qopt-radio"></div><span class="qopt-icon">📅</span>1 a 2 vezes por semana</div>
+      <div class="qopt" onclick="pick(4,1,&#39;3_4&#39;)"><div class="qopt-radio"></div><span class="qopt-icon">📅</span>3 a 4 vezes por semana</div>
+      <div class="qopt" onclick="pick(4,2,&#39;5_mais&#39;)"><div class="qopt-radio"></div><span class="qopt-icon">📅</span>5 ou mais vezes por semana</div>
+    </div>
+    <div class="quiz-nav"><button class="qbtn" id="QN4" onclick="next(4)" disabled="">Próxima →</button></div>
+  </div>
+
+  <!-- Q5 -->
+  <div class="qblock" id="QB5">
+    <div class="qnum">Pergunta 5 de 6</div>
+    <div class="qtext">Qual é o seu orçamento para o tênis?</div>
+    <div class="qopts" id="QO5">
+      <div class="qopt" onclick="pick(5,0,&#39;baixo&#39;)"><div class="qopt-radio"></div><span class="qopt-icon">💰</span>Até R$500 — quero econômico e funcional</div>
+      <div class="qopt" onclick="pick(5,1,&#39;medio&#39;)"><div class="qopt-radio"></div><span class="qopt-icon">💳</span>R$500 a R$1.000 — quero qualidade real</div>
+      <div class="qopt" onclick="pick(5,2,&#39;alto&#39;)"><div class="qopt-radio"></div><span class="qopt-icon">💎</span>Acima de R$1.000 — quero o melhor</div>
+    </div>
+    <div class="quiz-nav"><button class="qbtn" id="QN5" onclick="next(5)" disabled="">Próxima →</button></div>
+  </div>
+
+  <!-- Q6 -->
+  <div class="qblock" id="QB6">
+    <div class="qnum">Pergunta 6 de 6</div>
+    <div class="qtext">Você tem algum desses fatores relevantes para a escolha?</div>
+    <div class="qopts" id="QO6">
+      <div class="qopt" onclick="pick(6,0,&#39;nenhum&#39;)"><div class="qopt-radio"></div><span class="qopt-icon">✅</span>Nenhum dos abaixo — sou saudável e sem histórico</div>
+      <div class="qopt" onclick="pick(6,1,&#39;ciclo&#39;)"><div class="qopt-radio"></div><span class="qopt-icon">🌙</span>Ciclo irregular ou fase lútea intensa</div>
+      <div class="qopt" onclick="pick(6,2,&#39;pos_parto&#39;)"><div class="qopt-radio"></div><span class="qopt-icon">👶</span>Estou no pós-parto (últimos 2 anos)</div>
+      <div class="qopt" onclick="pick(6,3,&#39;hipermob&#39;)"><div class="qopt-radio"></div><span class="qopt-icon">⚡</span>Articulações muito frouxas / hipermobilidade</div>
+    </div>
+    <div class="quiz-nav"><button class="qbtn accent" id="QN6" onclick="showResult()" disabled="">Ver meu resultado →</button></div>
+  </div>
+
+</div><!-- quiz-body -->
+</div><!-- quiz-inner -->
+</div><!-- quiz-wrap -->
+
+<div class="result-wrap" id="QResult">
+  <div class="res-hero">
+    <div class="res-badge">✨ Seu Perfil Personalizado</div>
+    <div class="res-titulo" id="RTitulo"></div>
+    <div class="res-sub" id="RSub"></div>
+    <div class="res-tenis">
+      <div class="res-tenis-label">TÊNIS RECOMENDADO</div>
+      <div class="res-tenis-name" id="RTenis"></div>
+      <div class="res-tenis-why" id="RWhy"></div>
+    </div>
+    <div class="res-grid" id="RGrid"></div>
+    <button class="res-restart" onclick="restartQuiz()">↩ Refazer o quiz</button>
+  </div>
+</div>
+</div></div>
+<div class="page" data-page="11"><div class="content"><div class="read-badge" id="RB-11">✓ Lida</div><div class="cap-label">Capítulo 10</div><h1>Como aumentar a<br><em>durabilidade</em> do tênis</h1><div class="divider"></div><p class="lead">Um tênis bem cuidado dura o dobro de um mal usado. E isso não depende de quanto você gastou — depende de como você trata.</p><h2>Vida útil por tipo de tênis</h2><div class="lbar"><div class="llab">Rodagem (espuma EVA)</div><div class="ltrack"><div class="lfill" style="width:90%"></div></div><div class="lkm">700–900km</div></div><div class="lbar"><div class="llab">Rodagem (PEBA / FF Blast+)</div><div class="ltrack"><div class="lfill" style="width:72%"></div></div><div class="lkm">550–650km</div></div><div class="lbar"><div class="llab">Versátil / Tiro</div><div class="ltrack"><div class="lfill" style="width:58%"></div></div><div class="lkm">450–550km</div></div><div class="lbar"><div class="llab">Prova com carbono</div><div class="ltrack"><div class="lfill" style="width:44%"></div></div><div class="lkm">350–420km</div></div><div class="lbar"><div class="llab">Entrada de linha</div><div class="ltrack"><div class="lfill" style="width:50%"></div></div><div class="lkm">400–500km</div></div><h2>Quantos meses isso representa?</h2><table class="t"><tbody><tr><th>Frequência</th><th>km/mês</th><th>Rodagem (700km)</th><th>Carbono (350km)</th></tr><tr><td>2x por semana</td><td>~30km</td><td>~23 meses</td><td>~12 meses</td></tr><tr><td>3x por semana</td><td>~50km</td><td>~14 meses</td><td>~7 meses</td></tr><tr><td>4x por semana</td><td>~70km</td><td>~10 meses</td><td>~5 meses</td></tr><tr><td>5x por semana</td><td>~90km</td><td>~8 meses</td><td>~4 meses</td></tr></tbody></table><h2>Regras de conservação</h2><table class="t"><tbody><tr><th>Prática</th><th>Resultado</th></tr><tr><td>✅ Rodízio entre 2 pares</td><td>Aumenta vida útil em até 40%. Espuma precisa de 24–48h para recuperar.</td></tr><tr><td>✅ Lavar à mão (água fria + sabão neutro)</td><td>Mantém a integridade da espuma.</td></tr><tr><td>✅ Secar à sombra com papel jornal dentro</td><td>Absorve umidade sem danificar.</td></tr><tr><td>❌ Usar fora da corrida</td><td>Cada km de caminhada é km perdido de corrida.</td></tr><tr><td>❌ Lavar na máquina (carbono e PEBA)</td><td>Centrifugação destrói a espuma.</td></tr><tr><td>❌ Secar na secadora ou sol direto</td><td>Calor descola a sola permanentemente.</td></tr></tbody></table><div class="card cpaper"><strong>Como medir o número correto em casa:</strong>
+<p>1. Folha de papel no chão. 2. Marque calcanhar e ponta do maior dedo. 3. Meça em cm. 4. Se cair entre números, escolha o maior.</p>
+<p><strong>Regra de ouro:</strong> deixe 1 dedo de espaço entre o dedo maior e a ponta do tênis.</p></div></div></div>
+<div class="page" data-page="12"><div class="content"><div class="read-badge" id="RB-12">✓ Lida</div><div class="cap-label">Capítulo 11</div><h1>Erros mais comuns<br>ao escolher um <em>tênis</em></h1><div class="divider"></div><p class="lead">Errar na escolha do tênis não é questão de falta de informação — é questão de informação errada. Vamos corrigir os 8 erros mais comuns.</p><img src="./Guia Completo de Tênis de Corrida — BOS Performance_files/photo-1491553895911-0055eca6402d" alt="Tênis de corrida" loading="lazy" style="width:100%;height:160px;object-fit:cover;border-radius:10px;margin:16px 0;"><div class="alert al-r"><div class="ai">❌</div><div class="ab"><strong>Erro 1: Comprar pelo visual.</strong> O tênis mais bonito da prateleira pode ser o errado para o seu perfil. Escolha pela função, não pela estética.</div></div><div class="alert al-r"><div class="ai">❌</div><div class="ab"><strong>Erro 2: Usar o mesmo tênis para tudo.</strong> Um par para rodagem, tiro e prova não serve igualmente bem em nenhum dos três. Cada função tem sua ferramenta.</div></div><div class="alert al-r"><div class="ai">❌</div><div class="ab"><strong>Erro 3: Ignorar a morfologia do pé.</strong> Comprar Asics com joanete pode piorar progressivamente uma condição que já existe.</div></div><div class="alert al-r"><div class="ai">❌</div><div class="ab"><strong>Erro 4: Estrear o tênis de prova na largada.</strong> O corpo precisa de pelo menos 3–4 treinos para adaptar a biomecânica ao novo tênis.</div></div><div class="alert al-r"><div class="ai">❌</div><div class="ab"><strong>Erro 5: Trocar de drop bruscamente.</strong> Mudar de 10mm para 4mm do dia para a noite é receita de tendinopatia de Aquiles.</div></div><div class="alert al-r"><div class="ai">❌</div><div class="ab"><strong>Erro 6: Não registrar os km do tênis.</strong> Sem controle de quilometragem, você treina com tênis vencido sem perceber.</div></div><div class="alert al-r"><div class="ai">❌</div><div class="ab"><strong>Erro 7: Comprar carbono sem estar preparada.</strong> A placa exige musculatura, cadência e passada desenvolvidas.</div></div><div class="alert al-r"><div class="ai">❌</div><div class="ab"><strong>Erro 8: Ignorar o ciclo menstrual.</strong> Na fase lútea e menstruação, os ligamentos ficam mais frouxos. O tênis precisa compensar.</div></div><div class="alert al-g"><div class="ai">✅</div><div class="ab"><strong>A regra que evita a maioria dos erros:</strong> antes de qualquer mudança de tênis fora da rotina atual, me consulte. A escolha do tênis faz parte do planejamento de treino.</div></div></div></div>
+<div class="page" data-page="13"><div class="content"><div class="read-badge" id="RB-13">✓ Lida</div><div class="cap-label">Capítulo 12</div><h1>Como montar uma<br><em>rotação de tênis</em></h1><div class="divider"></div><div class="alert al-b"><div class="ai">ℹ️</div><div class="ab"><strong>Para quem é esta seção:</strong> atletas que já fazem treinos com tiro — geralmente a partir de 3 a 6 meses de treino consistente. Se você está começando agora, guarde para o futuro.</div></div><p class="lead">Rotatividade não é luxo — é estratégia. Cada tipo de tênis foi projetado para um tipo específico de esforço, e misturar isso custa lesão e dinheiro.</p><h2>Diagrama de uma sessão com tiro</h2><div class="rflow">
+<div class="rstep rs-w"><span class="rshoe">👟</span><h4>Aquecimento</h4><div class="rmod" style="color:var(--ink-light)">Tênis de rodagem<br>Nimbus / Ride / Clifton</div></div>
+<div class="rarr">→</div>
+<div class="rstep rs-e"><span class="rshoe">⚡</span><h4>Bloco de Tiros</h4><div class="rmod">Tênis de tiro<br>Boston 13 / Kinvara</div></div>
+<div class="rarr rarr-e">→</div>
+<div class="rstep rs-c"><span class="rshoe">👟</span><h4>Desaquecimento</h4><div class="rmod" style="color:var(--ink-light)">Volta ao rodagem<br>Mesmo do aquecimento</div></div>
+</div><h2>Por que o Boston 13 não serve para corrida leve</h2><p>O Boston 13 tem meia-placa de carbono e espuma Lightstrike Pro — otimizadas para alta cadência e velocidade elevada. Em corrida leve (Z1/Z2), a placa fica rígida e mal posicionada, gerando sobrecarga no Aquiles que não acontece quando opera na velocidade certa.</p><h2>Rotação ideal por nível</h2><table class="t"><tbody><tr><th>Nível</th><th>Par 1</th><th>Par 2</th><th>Par 3 (opcional)</th></tr><tr><td>Iniciante</td><td>Rodagem (único par)</td><td>—</td><td>—</td></tr><tr><td>Intermediária</td><td>Rodagem</td><td>Tiro/Versátil</td><td>—</td></tr><tr><td>Avançada</td><td>Rodagem</td><td>Tiro específico</td><td>Prova (carbono)</td></tr></tbody></table><div class="alert al-g"><div class="ai">✅</div><div class="ab"><strong>Benefício extra do rodízio:</strong> alternar 2 pares de rodagem aumenta a vida útil de cada um em até 40%, porque a espuma tem 24–48h para recuperar o volume entre usos.</div></div><img src="./Guia Completo de Tênis de Corrida — BOS Performance_files/photo-1461896836934-ffe607ba8211" alt="Corrida em rodagem" loading="lazy" style="width:100%;height:160px;object-fit:cover;border-radius:10px;margin:16px 0;"></div></div>
+<div class="page" data-page="14"><div class="content"><div class="read-badge" id="RB-14">✓ Lida</div><div class="cap-label">Bônus Exclusivo BOS</div><h1>Ciclo menstrual &amp;<br><em>frouxidão ligamentar</em></h1><div class="divider"></div><div style="position:relative;width:100%;height:190px;border-radius:12px;overflow:hidden;margin:20px 0;">
+<img src="./Guia Completo de Tênis de Corrida — BOS Performance_files/photo-1506126613408-eca07ce68773" alt="Fisiologia feminina" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+<div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(90,31,104,0.18),rgba(26,26,46,0.55));"></div>
+</div><p class="lead">Este é o conteúdo que você não vai encontrar em nenhum guia de tênis convencional — porque a maioria foi escrita por homens, para homens. Na BOS, a fisiologia feminina é parte central do planejamento.</p><h2>O que acontece com seus ligamentos ao longo do ciclo</h2><div class="cyc-grid"><div class="cyc cF"><h4>Fase Folicular</h4><div class="days">Dias 1–13</div><p>Estrogênio em ascensão. Ligamentos em condição normal. Fase mais segura para treinos intensos.</p><span class="rec">✅ Pode usar tiro e carbono</span></div><div class="cyc cO"><h4>Ovulação</h4><div class="days">Dias 12–16</div><p>Pico de estrogênio. Ligamentos levemente mais frouxos. Atenção em pliometria.</p><span class="rec">⚠️ Atenção em saltos</span></div><div class="cyc cL"><h4>Fase Lútea</h4><div class="days">Dias 17–28</div><p>Estrogênio cai. Ligamentos progressivamente frouxos. Pé pode inchar até 1 número.</p><span class="rec">⚠️ Drop alto, mais amortecimento</span></div><div class="cyc cM"><h4>Menstruação</h4><div class="days">Dias 1–5</div><p>Queda abrupta hormonal. Máxima frouxidão ligamentar. Período de maior risco articular.</p><span class="rec">🔴 Drop alto obrigatório</span></div></div><h2>Implicações práticas para o tênis</h2><ul class="pl"><li><strong>Fase lútea e menstruação:</strong> prefira tênis com drop 8–12mm e amortecimento generoso. Reduz a demanda sobre tornozelo e Aquiles, compensando a menor rigidez dos ligamentos.</li><li><strong>O pé pode inchar:</strong> na fase lútea, use cadarço elástico ou tênis com meio número a mais para acomodar a retenção de líquido.</li><li><strong>Nunca estrear carbono na fase lútea:</strong> a placa exige estabilidade articular. Com ligamentos frouxos, o risco de entorse é real.</li><li><strong>Frouxidão crônica:</strong> algumas mulheres têm hipermobilidade articular independente do ciclo. Nesses casos, tênis de estabilidade são sempre recomendados.</li><li><strong>Pós-parto:</strong> o hormônio relaxina pode alargar permanentemente o pé. Remeça antes de comprar um tênis novo.</li></ul><div class="alert al-p"><div class="ai">📌</div><div class="ab"><strong>Por isso peço que sempre me informe seu ciclo.</strong> Não é frescura — é dado fisiológico que altera a escolha do tênis, a intensidade do treino e o risco de lesão. A BOS trabalha com o seu corpo, não contra ele.</div></div></div></div>
+<div class="page" data-page="15"><div class="content"><div class="read-badge" id="RB-15">✓ Lida</div><div class="cap-label">Seção Especial</div><h1>Casos específicos —<br><em>consulte sua coach</em></h1><div class="divider"></div><p class="lead">As orientações gerais deste guia cobrem a maioria das corredoras. Mas certos perfis exigem atenção individualizada antes de qualquer compra.</p><div class="cases"><div class="ccase" style="border-color:#EF9A9A;background:#FFF5F5"><h4 style="color:var(--red)">🦶 Joanete (Hálux Valgo)</h4><p>A pressão lateral pode inflamar a bursa e agravar a deformidade progressivamente.</p><div class="cok">✅ Hoka Clifton, Nike Pegasus 41, Adidas Ultraboost 24</div><div class="cno">❌ Asics, Mizuno, bico afilado</div></div><div class="ccase" style="border-color:#EF9A9A;background:#FFF5F5"><h4 style="color:var(--red)">🦶 Neuroma de Morton</h4><p>Dor entre 3º e 4º dedo. Qualquer compressão lateral agrava o quadro.</p><div class="cok">✅ Hoka Clifton, Adidas Ultraboost 24, Nike Pegasus 41</div><div class="cno">❌ Asics, Mizuno, qualquer bico estreito</div></div><div class="ccase" style="border-color:#FFE082;background:#FFFDE7"><h4 style="color:var(--yellow)">⚡ Hipermobilidade Articular</h4><p>Mais comum em mulheres. Articulações frouxas cronicamente — independente do ciclo.</p><div class="cok">✅ Asics GT-2000, Adidas Adizero Boston 12, Nike Pegasus 41</div><div class="cno">❌ Zero drop, carbono sem adaptação</div></div><div class="ccase" style="border-color:var(--purple-mid);background:var(--purple-light)"><h4 style="color:var(--purple)">🤱 Pós-Parto</h4><p>Relaxina pode alargar permanentemente o pé. O número pode nunca voltar.</p><div class="cok">✅ Remeça o pé antes de comprar qualquer par</div></div><div class="ccase" style="border-color:#EF9A9A;background:#FFF5F5"><h4 style="color:var(--red)">🦷 Fascite Plantar Crônica</h4><p>Inflamação da fáscia. Impacto sem suporte adequado agrava continuamente.</p><div class="cok">✅ Hoka Bondi 8, Asics Gel-Nimbus 26, Nike Pegasus 41 + palmilha ortopédica</div><div class="cno">❌ Drop abaixo de 8mm</div></div><div class="ccase" style="border-color:#FFE082;background:#FFFDE7"><h4 style="color:var(--yellow)">🦵 Condromalácia Patelar</h4><p>Desgaste de cartilagem. Drop baixo e impacto repetido agravam o quadro.</p><div class="cok">✅ Hoka Clifton 9, Asics Gel-Nimbus 26, Nike Pegasus 41</div><div class="cno">❌ Drop baixo, descidas sem preparo</div></div></div><div class="alert al-r"><div class="ai">🚨</div><div class="ab"><strong>Se você se identificou com qualquer caso acima:</strong> não compre tênis sem me consultar primeiro. Uma compra errada nesses casos pode agravar uma condição que já existe.</div></div><div class="card cp"><strong>🎯 O que a BOS faz de diferente:</strong><p>Nenhum plano de treino da BOS ignora a fisiologia feminina. O tênis, o ciclo, a morfologia e o histórico de lesão fazem parte do mesmo sistema. Performance construída com método e consistência.</p></div></div></div>
+<div class="page" data-page="16">
+<div style="background:linear-gradient(135deg,#3A0E4A 0%,#5A1F68 40%,#7B2D8B 70%,#9C3FB5 100%);min-height:82vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 40px;position:relative;overflow:hidden;">
+  <img src="./Guia Completo de Tênis de Corrida — BOS Performance_files/photo-1461896836934-ffe607ba8211" alt="Corrida" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.18;mix-blend-mode:luminosity;">
+  <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(58,14,74,.6),rgba(90,31,104,.7));"></div>
+  <div style="position:relative;z-index:2;max-width:520px;">
+    <div style="margin-bottom:32px;">
+      <div style="width:90px;height:90px;border-radius:50%;background:rgba(255,255,255,.1);border:2px solid rgba(224,64,251,.4);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">
+        <span style="font-family:&#39;Playfair Display&#39;,serif;font-size:1.6em;font-weight:700;color:white;letter-spacing:.04em;">BOS</span>
+      </div>
+      <div style="font-family:&#39;DM Sans&#39;,sans-serif;font-weight:700;font-size:.78em;letter-spacing:.28em;color:#D4A8E0;text-transform:uppercase;">Performance</div>
+    </div>
+    <h1 style="font-family:&#39;Playfair Display&#39;,serif;font-size:2.4em;font-weight:700;color:white;line-height:1.15;margin-bottom:14px;">Agora você <em style="color:#E040FB;font-style:italic;">sabe escolher.</em></h1>
+    <p style="font-family:&#39;Lora&#39;,serif;font-style:italic;font-size:1em;color:rgba(255,255,255,.72);line-height:1.7;margin-bottom:30px;">A escolha do tênis faz parte da estratégia de treino.<br>Nunca é apenas sobre o tênis — é sobre o seu corpo,<br>o seu momento e o seu objetivo.</p>
+    <div style="width:70px;height:2px;background:linear-gradient(90deg,transparent,#E040FB,transparent);margin:0 auto 30px;"></div>
+    <div style="display:flex;justify-content:center;gap:36px;margin-bottom:34px;">
+      <div><div style="font-size:1.8em;margin-bottom:6px;">🗓️</div><div style="font-family:&#39;DM Sans&#39;,sans-serif;font-size:.72em;font-weight:700;color:white;letter-spacing:.1em;text-transform:uppercase;">Rotina</div></div>
+      <div><div style="font-size:1.8em;margin-bottom:6px;">📊</div><div style="font-family:&#39;DM Sans&#39;,sans-serif;font-size:.72em;font-weight:700;color:white;letter-spacing:.1em;text-transform:uppercase;">Estratégia</div></div>
+      <div><div style="font-size:1.8em;margin-bottom:6px;">🏆</div><div style="font-family:&#39;DM Sans&#39;,sans-serif;font-size:.72em;font-weight:700;color:white;letter-spacing:.1em;text-transform:uppercase;">Resultado</div></div>
+    </div>
+    <div style="background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.18);border-radius:12px;padding:20px 24px;margin-bottom:28px;">
+      <p style="font-family:&#39;DM Sans&#39;,sans-serif;font-size:.9em;color:rgba(255,255,255,.82);line-height:1.65;margin-bottom:0;">
+        Antes de comprar qualquer tênis novo —<br>
+        <strong style="color:white;">me consulte.</strong><br>
+        <span style="font-size:.85em;opacity:.7">Uma compra errada pode custar semanas de recuperação.</span>
+      </p>
+    </div>
+    <div style="font-family:&#39;DM Sans&#39;,sans-serif;font-size:.82em;color:rgba(255,255,255,.5);line-height:1.8;">
+      <strong style="color:rgba(255,255,255,.85);">Taynara Cunha</strong><br>
+      Head Coach · BOS Performance<br>
+      Tricampeã IRONMAN 70.3
+    </div>
+  </div>
+</div>
+</div>
+</div><!-- PW -->
+<div class="bnav">
+  <button class="nbtn" id="PB_prev" onclick="cp(-1)" disabled="">← Anterior</button>
+  <div class="pind">
+    <span id="PB_ind">Página 1 de 17</span>
+    <button class="mrdbtn" id="MRD" onclick="toggleRead()" style="display: none;">☐ Marcar como lida</button>
+  </div>
+  <button class="nbtn pri" id="PB_next" onclick="cp(1)">Próxima →</button>
+</div>
+</div><!-- shell -->
+<button class="hbtn" onclick="gp(0)" title="Voltar ao início">🏠</button>
+<script>
+const TOTAL=17, SK='bos_v3';
+let cur=0, fs=17;
+const qa={};
+const chs=["Capa","Introdução","Cap 1: Como o tênis influencia sua corrida","Cap 2: Amortecimento, Estabilidade e Responsividade","Cap 3: Drop — o que é e como funciona","Cap 4: Pisada pronada, supinada e neutra","Cap 5: Tênis para iniciantes","Cap 6: Provas curtas — 5km e 10km","Cap 7: Meia maratona e maratona","Cap 8: Treino diário vs performance","Cap 9: Encontre seu tênis ideal (Quiz)","Cap 10: Durabilidade do tênis","Cap 11: Erros mais comuns","Cap 12: Rotação de tênis","Bônus: Ciclo menstrual e frouxidão","Casos específicos","Encerramento"];
+
+function loadS(){try{const s=localStorage.getItem(SK);if(s)return JSON.parse(s)}catch(e){}return{r:[],c:0}}
+function saveS(){try{localStorage.setItem(SK,JSON.stringify({r:[...rp],c:cur}))}catch(e){}}
+let st=loadS(), rp=new Set(st.r||[]);
+
+function buildMenu(){
+  const c=document.getElementById('MI');
+  c.innerHTML=chs.map((ch,i)=>`<div class="mitem ${i===cur?'active':''}" onclick="gp(${i});tmenu()"><span class="mnum">${String(i).padStart(2,'0')}</span><span>${ch}</span>${rp.has(i)&&i>0?'<span class="ck">✓</span>':''}</div>`).join('');
+}
+
+function tmenu(){document.getElementById('CM').classList.toggle('open')}
+document.addEventListener('click',e=>{if(!e.target.closest('.cmenu')&&!e.target.closest('.mbtn'))document.getElementById('CM').classList.remove('open')});
+
+function gp(n){
+  document.querySelectorAll('.page')[cur].classList.remove('active');
+  cur=n;
+  document.querySelectorAll('.page')[cur].classList.add('active');
+  uiUpdate(); window.scrollTo(0,0);
+}
+function cp(d){const n=cur+d;if(n<0||n>=TOTAL)return;gp(n);}
+
+function uiUpdate(){
+  document.getElementById('PB').style.width=(cur/(TOTAL-1)*100)+'%';
+  document.getElementById('PB_prev').disabled=cur===0;
+  const nb=document.getElementById('PB_next');
+  nb.disabled=cur===TOTAL-1;
+  nb.textContent=cur===TOTAL-1?'Fim ✓':'Próxima →';
+  document.getElementById('PB_ind').textContent='Página '+(cur+1)+' de '+TOTAL;
+  const mb=document.getElementById('MRD');
+  const isR=rp.has(cur);
+  mb.className='mrdbtn'+(isR?' on':'');
+  mb.textContent=isR?'✓ Lida':'☐ Marcar como lida';
+  mb.style.display=cur===0?'none':'';
+  const rb=document.getElementById('RB-'+cur);
+  if(rb)rb.className='read-badge'+(isR?' on':'');
+  const rc=[...rp].filter(p=>p>0).length;
+  document.getElementById('PInd').textContent=rc+'/'+(TOTAL-1)+' lidas';
+  buildMenu(); saveS();
+}
+
+function toggleRead(){
+  if(cur===0)return;
+  if(rp.has(cur))rp.delete(cur); else rp.add(cur);
+  uiUpdate();
+}
+
+function fz(d){fs=Math.min(22,Math.max(13,fs+d));document.documentElement.style.setProperty('--font-size',fs+'px');}
+
+/* ── QUIZ ── */
+let qStep=1, qAnswers={};
+function initDots(){
+  const s=document.getElementById('QSteps');
+  s.innerHTML=Array.from({length:6},(_,i)=>`<div class="qs-dot ${i===0?'active':''}" id="QD${i+1}"></div>`).join('');
+}
+function updateDots(step){
+  for(let i=1;i<=6;i++){
+    const d=document.getElementById('QD'+i);
+    if(!d)return;
+    if(i<step)d.className='qs-dot done';
+    else if(i===step)d.className='qs-dot active';
+    else d.className='qs-dot';
+  }
+}
+function pick(q,idx,val){
+  document.querySelectorAll('#QO'+q+' .qopt').forEach(o=>o.classList.remove('sel'));
+  document.querySelectorAll('#QO'+q+' .qopt')[idx].classList.add('sel');
+  qAnswers['q'+q]=val;
+  document.getElementById('QN'+q).disabled=false;
+}
+function next(q){
+  document.getElementById('QB'+q).classList.remove('active');
+  qStep=q+1;
+  document.getElementById('QB'+qStep).classList.add('active');
+  updateDots(qStep);
+}
+function restartQuiz(){
+  qAnswers={}; qStep=1;
+  document.querySelectorAll('.qblock').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.qopt').forEach(o=>o.classList.remove('sel'));
+  document.querySelectorAll('.qbtn').forEach(b=>b.disabled=true);
+  document.getElementById('QB1').classList.add('active');
+  document.getElementById('QResult').classList.remove('show');
+  document.querySelectorAll('.quiz-wrap').forEach(w=>w.style.display='');
+  updateDots(1);
+}
+
+/* ── RESULTADO DO QUIZ ── */
+const TENIS_DB = {
+  iniciante: {
+    saude: {
+      normal:   {
+        baixo: {n:'Olympikus Corre 24',   w:'Melhor entrada nacional. Durável, com drop 10mm e custo-benefício imbatível para quem está começando do zero.'},
+        medio: {n:'Asics Gel-Cumulus 26', w:'Clássico de rodagem: FF Blast+, drop 10mm, durabilidade de 700km. Perfeito para construir base sem gastar demais.'},
+        alto:  {n:'Nike Pegasus 41',      w:'O tênis mais confiável da Nike. Drop 10mm, ReactX responsivo e versátil para qualquer ritmo. O "melhor amigo" da iniciante.'}
+      },
+      largo: {
+        baixo: {n:'Olympikus Energy 23',  w:'Antepé mais generoso que o Corre 24. Melhor entrada nacional para pé largo ou joanete.'},
+        medio: {n:'Nike Pegasus 41',      w:'Toe box generoso, drop 10mm e amortecimento confiável. Funciona bem para pé largo sem custo premium.'},
+        alto:  {n:'Hoka Clifton 9',       w:'Toe box muito amplo + amortecimento máximo. Top 1 para joanete e pé largo em qualquer nível.'}
+      },
+      estreito: {
+        baixo: {n:'Asics GT-1000 13',     w:'Last estreita da Asics, suporte leve e preço acessível. O encaixe perfeito para pé fino que está começando.'},
+        medio: {n:'Asics Gel-Cumulus 26', w:'O melhor encaixe para pé estreito no mercado. Last fina, espuma confortável, drop 10mm.'},
+        alto:  {n:'Asics Gel-Nimbus 26',  w:'Topo de linha Asics. Amortecimento premium, last estreita perfeita para pé fino.'}
+      },
+      lesao: {
+        baixo: {n:'Asics Gel-Nimbus 26',  w:'Drop 10mm, Gel + FF Blast e boa estabilidade. O mais protetor da faixa acessível para histórico de lesão.'},
+        medio: {n:'Hoka Clifton 9',       w:'Amortecimento máximo + toe box generoso. Protege articulações sensíveis sem pesar o pé.'},
+        alto:  {n:'Hoka Bondi 8',         w:'O maior amortecimento do mercado. Para histórico de joelho, fascite ou Aquiles — proteção máxima.'}
+      }
+    },
+    primeira_prova: {
+      normal: {
+        baixo: {n:'Olympikus Corre 24',   w:'Para completar a primeira prova, o tênis que você já treina é sempre o melhor. O Corre 24 faz isso bem.'},
+        medio: {n:'Nike Pegasus 41',      w:'Versátil o suficiente para treino e prova. Responsivo sem ser exigente. Uma estreia tranquila.'},
+        alto:  {n:'Asics Gel-Cumulus 26', w:'Confortável, durável e com boa responsividade. Perfeito para completar a primeira prova com segurança.'}
+      },
+      largo: {
+        baixo: {n:'Olympikus Energy 23',  w:'Toe box mais amplo. Melhor entrada para pé largo na primeira prova.'},
+        medio: {n:'Nike Pegasus 41',      w:'Toe box generoso e amortecimento confiável para completar a primeira prova com pé largo.'},
+        alto:  {n:'Hoka Clifton 9',       w:'Proteção máxima e toe box amplo. Para a primeira prova com conforto total e pé largo.'}
+      },
+      estreito: {
+        baixo: {n:'Asics GT-1000 13',     w:'Last estreita, suporte e conforto. Bom para completar a primeira prova com pé fino.'},
+        medio: {n:'Asics Gel-Cumulus 26', w:'Encaixe perfeito para pé estreito, confortável para durar a prova inteira.'},
+        alto:  {n:'Mizuno Wave Rider 28', w:'Drop 12mm e placa Wave — a mais estável para pé estreito. Confortável e segura para a primeira prova.'}
+      },
+      lesao: {
+        baixo: {n:'Asics Gel-Nimbus 26',  w:'Proteção articular máxima para completar a prova sem agravar histórico de lesão.'},
+        medio: {n:'Asics GT-2000 13',     w:'Estabilidade leve + amortecimento generoso para histórico de pronação ou joelho sensível.'},
+        alto:  {n:'Hoka Clifton 9',       w:'Amortecimento generoso e toe box largo. Para completar a primeira prova com proteção máxima.'}
+      }
+    },
+    tempo: {
+      normal: {
+        baixo: {n:'Olympikus Pro X',      w:'A aposta nacional para velocidade. Meia-placa de nylon acessível para iniciantes que querem evoluir.'},
+        medio: {n:'Adidas Adizero SL',    w:'Leve e responsivo sem placa completa. Excelente para iniciante que quer velocidade com custo médio.'},
+        alto:  {n:'Nike Pegasus 41',      w:'Versátil e responsivo. Ótimo para construir base de velocidade com qualidade Nike.'}
+      },
+      largo: {
+        baixo: {n:'Olympikus Pro X',      w:'Custo-benefício em performance com toe box mais generoso que marcas importadas.'},
+        medio: {n:'Adidas SL 20.3',       w:'Responsivo com antepé mais generoso que o Boston. Para pé largo que quer ganhar ritmo.'},
+        alto:  {n:'Nike Pegasus 41',      w:'Toe box razoável e boa responsividade. Para pé levemente largo que quer velocidade.'}
+      },
+      estreito: {
+        baixo: {n:'Asics GT-1000 13',     w:'Base de rodagem para construir velocidade com pé estreito.'},
+        medio: {n:'Asics Gel-Cumulus 26', w:'Rodagem responsiva para pé estreito que quer ganhar ritmo.'},
+        alto:  {n:'Asics Gel-Kayano 31',  w:'Estabilidade + responsividade para pé estreito que quer ganhar performance com segurança.'}
+      },
+      lesao: {
+        baixo: {n:'Asics GT-1000 13',     w:'Suporte leve e amortecimento para ganhar ritmo com segurança articular.'},
+        medio: {n:'Asics GT-2000 13',     w:'Estabilidade avançada para histórico de lesão que quer ganhar performance.'},
+        alto:  {n:'Hoka Clifton 9',       w:'Amortecimento generoso para treinos de velocidade com histórico de lesão.'}
+      }
+    },
+    longa: {
+      normal: {
+        baixo: {n:'Asics Gel-Cumulus 26', w:'Durável e confortável para distâncias longas. Começa com ele antes de pensar em carbono.'},
+        medio: {n:'Nike Pegasus 41',      w:'ReactX absorvente para longões. Protege quando a fadiga aumenta a partir dos 15km.'},
+        alto:  {n:'Asics Gel-Nimbus 26',  w:'O melhor rodagem para longões. Dura 900km e protege cada km deles com Gel + FF Blast.'}
+      },
+      largo: {
+        baixo: {n:'Olympikus Energy 23',  w:'Toe box generoso para longas com pé largo. Econômico e funcional.'},
+        medio: {n:'Hoka Clifton 9',       w:'Amortecimento máximo + toe box amplo para longas com pé largo ou joanete.'},
+        alto:  {n:'Hoka Bondi 8',         w:'O maior amortecimento do mercado + toe box generoso. Para longões com pé largo e proteção total.'}
+      },
+      estreito: {
+        baixo: {n:'Asics GT-1000 13',     w:'Base de rodagem econômica para longas com pé estreito.'},
+        medio: {n:'Asics Gel-Cumulus 26', w:'Rodagem confortável para longas com pé estreito.'},
+        alto:  {n:'Asics Gel-Nimbus 26',  w:'Máxima proteção em last estreita para longões. A referência Asics em longa distância.'}
+      },
+      lesao: {
+        baixo: {n:'Hoka Clifton 9',       w:'Amortecimento máximo acessível para longas com histórico de lesão.'},
+        medio: {n:'Hoka Bondi 8',         w:'A maior proteção do mercado. A escolha mais segura para longões com histórico.'},
+        alto:  {n:'Hoka Bondi 8',         w:'Para histórico de lesão em longas, o Bondi 8 é o mais protetor do mercado.'}
+      }
+    }
+  },
+
+  intermediaria: {
+    saude: {
+      normal: {
+        baixo: {n:'Nike Pegasus 41',        w:'O mais confiável do mundo para treinos regulares. Drop 10mm, versátil e com ótimo custo-benefício.'},
+        medio: {n:'Asics Gel-Nimbus 26',    w:'Topo de rodagem. Ideal para treinos frequentes com proteção máxima e durabilidade de até 900km.'},
+        alto:  {n:'Nike Pegasus 41',        w:'Premium e confiável. Para treinos regulares de saúde com a qualidade Nike no melhor nível.'}
+      },
+      largo: {
+        baixo: {n:'Nike Pegasus 41',        w:'Toe box mais generoso que Asics e Mizuno. Boa opção para pé levemente largo em treinos regulares.'},
+        medio: {n:'Adidas Ultraboost 24',   w:'Boost macio e toe box generoso. Confortável para treinos regulares com pé largo.'},
+        alto:  {n:'Adidas Ultraboost 24',   w:'Amortecimento Boost premium e toe box generoso. Excelente para pé largo em alto volume.'}
+      },
+      estreito: {
+        baixo: {n:'Asics Gel-Cumulus 26',   w:'Rodagem confortável e econômica para pé estreito. Dura 700km.'},
+        medio: {n:'Asics Gel-Nimbus 26',    w:'Topo de rodagem para pé estreito e treinos frequentes.'},
+        alto:  {n:'Asics Gel-Nimbus 26',    w:'O melhor rodagem para pé estreito no mercado. Referência absoluta.'}
+      },
+      lesao: {
+        baixo: {n:'Asics GT-2000 13',       w:'Estabilidade leve + amortecimento para treinos regulares com histórico de lesão.'},
+        medio: {n:'Hoka Clifton 9',         w:'Amortecimento + toe box generoso. Protege mesmo com histórico de lesão sem pesar.'},
+        alto:  {n:'Hoka Bondi 8',           w:'Amortecimento máximo para treinar com segurança quando há histórico de lesão sério.'}
+      }
+    },
+    primeira_prova: {
+      normal: {
+        baixo: {n:'Nike Pegasus 41',           w:'Versátil no treino e na prova. Para intermediária, é o suficiente para a primeira prova com confiança.'},
+        medio: {n:'Adidas Adizero Boston 12',  w:'O melhor tênis de tiro do mercado. Meia-placa carbono + Lightstrike Pro. Excelente para a primeira prova séria.'},
+        alto:  {n:'Nike Vaporfly 3',           w:'Carbono estável e rápido. A melhor relação performance/segurança para a primeira prova com resultado.'}
+      },
+      largo: {
+        baixo: {n:'Nike Pegasus 41',           w:'Toe box generoso para pé largo. Confortável e responsivo para a primeira prova.'},
+        medio: {n:'Nike Pegasus 41',           w:'O melhor custo-benefício com antepé generoso para intermediária em prova.'},
+        alto:  {n:'Adidas Adizero Adios Pro 3',w:'Carbono com varetas. Espaço decente no antepé para pé levemente largo em prova.'}
+      },
+      estreito: {
+        baixo: {n:'Asics Gel-Cumulus 26',      w:'Confortável e seguro para pé estreito na primeira prova.'},
+        medio: {n:'Asics Gel-Kayano 31',       w:'Estabilidade + responsividade para pé estreito em primeira prova.'},
+        alto:  {n:'Asics Metaspeed Sky+',      w:'Carbono japonês para pé estreito. A escolha natural para intermediária em prova.'}
+      },
+      lesao: {
+        baixo: {n:'Asics GT-2000 13',          w:'Estabilidade para completar a prova com segurança com histórico de lesão.'},
+        medio: {n:'Nike Pegasus 41',           w:'Confiável e protetor para primeira prova com histórico de lesão.'},
+        alto:  {n:'Adidas Adizero Boston 12',  w:'Meia-placa + estabilidade Lightstrike para histórico leve que quer performance real.'}
+      }
+    },
+    tempo: {
+      normal: {
+        baixo: {n:'Adidas Adizero Boston 12',  w:'O melhor tênis de tiro do mercado. Meia-placa carbono + Lightstrike Pro. Performance real sem gastar demais.'},
+        medio: {n:'Adidas Adizero Boston 13',  w:'Versão refinada do Boston. Meia-placa de alto nível para tiros e treinos de qualidade.'},
+        alto:  {n:'Nike Vaporfly 3',           w:'Carbono completo para ganhar tempo real em provas. A referência de performance.'}
+      },
+      largo: {
+        baixo: {n:'Adidas SL 20.3',            w:'Responsivo e com antepé mais generoso que o Boston. Para pé largo que quer performance.'},
+        medio: {n:'Adidas Adizero Boston 12',  w:'Performance de tiro com toe box mais amplo que Asics. Custo-benefício para pé levemente largo.'},
+        alto:  {n:'Adidas Adizero Adios Pro 3',w:'Carbono completo com varetas. Excelente para pé levemente largo e performance máxima.'}
+      },
+      estreito: {
+        baixo: {n:'Asics Kinvara 14',          w:'Leve, rápido e com last estreita. Excelente para tiros e provas curtas com pé fino.'},
+        medio: {n:'Adidas Adizero Boston 12',  w:'Performance de tiro com encaixe mais firme. Bom para pé estreito.'},
+        alto:  {n:'Asics Metaspeed Sky+',      w:'O carbono japonês para pé estreito. Elite em performance com encaixe perfeito.'}
+      },
+      lesao: {
+        baixo: {n:'Asics GT-2000 13',          w:'Estabilidade + responsividade para histórico de lesão que quer melhorar tempo.'},
+        medio: {n:'Nike Pegasus 41',           w:'Confiável e responsivo para performance com histórico de lesão leve.'},
+        alto:  {n:'Adidas Adizero Boston 12',  w:'Meia-placa + estabilidade para histórico leve que quer performance real em tiros.'}
+      }
+    },
+    longa: {
+      normal: {
+        baixo: {n:'Nike Pegasus 41',           w:'Base de rodagem para longas. Econômico, durável e confortável para longões.'},
+        medio: {n:'Asics Gel-Nimbus 26',       w:'Amortecimento premium para longas. Protege a partir dos 15km onde a fadiga aumenta.'},
+        alto:  {n:'Nike Vaporfly 3',           w:'Para meia maratona ou mais com resultado. Carbono completo, estável e rápido.'}
+      },
+      largo: {
+        baixo: {n:'Nike Pegasus 41',           w:'Toe box razoável e durabilidade para longas com pé levemente largo.'},
+        medio: {n:'Adidas Ultraboost 24',      w:'Boost generoso para longas com pé largo. Confortável e durável.'},
+        alto:  {n:'Adidas Adizero Adios Pro 3',w:'Carbono completo com bom espaço no antepé para longas com pé levemente largo.'}
+      },
+      estreito: {
+        baixo: {n:'Asics Gel-Nimbus 26',       w:'O melhor rodagem para longas com pé estreito.'},
+        medio: {n:'Asics Gel-Nimbus 26',       w:'Proteção máxima em last estreita para longas distâncias.'},
+        alto:  {n:'Asics Metaspeed Sky+',      w:'Carbono de pé estreito para longa distância com performance.'}
+      },
+      lesao: {
+        baixo: {n:'Hoka Clifton 9',            w:'Amortecimento para longas com histórico de lesão.'},
+        medio: {n:'Hoka Bondi 8',              w:'Proteção máxima para longas com histórico.'},
+        alto:  {n:'Nike Vaporfly 3',           w:'Carbono estável para intermediária com histórico leve que quer performance em longas.'}
+      }
+    }
+  },
+
+  avancada: {
+    saude: {
+      normal: {
+        baixo: {n:'Nike Pegasus 41',        w:'Rodagem confiável para avançada que prioriza saúde e longevidade em alto volume.'},
+        medio: {n:'Asics Gel-Nimbus 26',    w:'Topo de rodagem. Para avançada que quer o melhor em proteção e durabilidade em alto volume.'},
+        alto:  {n:'Asics Gel-Nimbus 26',    w:'A referência absoluta em rodagem. Para avançada em alto volume — dura 900km e protege cada um deles.'}
+      },
+      largo: {
+        baixo: {n:'Nike Pegasus 41',        w:'Rodagem durável com toe box razoável para alto volume com pé levemente largo.'},
+        medio: {n:'Adidas Ultraboost 24',   w:'Boost premium + toe box generoso para alto volume com pé largo.'},
+        alto:  {n:'Hoka Bondi 8',           w:'Amortecimento máximo + toe box muito generoso. O melhor de rodagem para pé largo em alto volume.'}
+      },
+      estreito: {
+        baixo: {n:'Asics Gel-Nimbus 26',    w:'Topo de rodagem para pé estreito em alto volume.'},
+        medio: {n:'Asics Gel-Nimbus 26',    w:'Referência em rodagem para avançada com pé estreito.'},
+        alto:  {n:'Asics Gel-Nimbus 26',    w:'O melhor rodagem para pé estreito do mercado. Sem paralelo.'}
+      },
+      lesao: {
+        baixo: {n:'Asics Gel-Kayano 31',    w:'Estabilidade avançada para alto volume com histórico de lesão.'},
+        medio: {n:'Hoka Clifton 9',         w:'Amortecimento generoso para avançada com histórico de lesão em alto volume.'},
+        alto:  {n:'Hoka Bondi 8',           w:'Proteção máxima para avançada com histórico de lesão. O mais seguro do mercado.'}
+      }
+    },
+    tempo: {
+      normal: {
+        baixo: {n:'Adidas Adizero Boston 12',  w:'O melhor tiro do mercado. Para avançada que quer performance real sem gastar muito.'},
+        medio: {n:'Adidas Adizero Boston 13',  w:'Meia-placa de alto nível para tiros. O melhor tênis de qualidade do mercado.'},
+        alto:  {n:'Nike Vaporfly 3',           w:'O carbono de referência. Estável, rápido e eficiente para provas e tiros de elite.'}
+      },
+      largo: {
+        baixo: {n:'Adidas SL 20.3',            w:'Responsivo com antepé mais generoso. Para pé levemente largo avançada que quer performance.'},
+        medio: {n:'Adidas Adizero Boston 12',  w:'Performance de tiro com antepé mais generoso que Asics. Para pé levemente largo.'},
+        alto:  {n:'Adidas Adizero Adios Pro 3',w:'Carbono completo com varetas. Para pé levemente largo e performance máxima em prova.'}
+      },
+      estreito: {
+        baixo: {n:'Adidas Adizero Boston 12',  w:'Performance com encaixe firme. Ótimo para pé estreito avançada.'},
+        medio: {n:'Asics Metaspeed Sky+',      w:'Carbono japonês para pé estreito. Performance de elite com encaixe perfeito.'},
+        alto:  {n:'Asics Metaspeed Sky+',      w:'O melhor carbono para pé estreito no mercado. A elite japonesa.'}
+      },
+      lesao: {
+        baixo: {n:'Asics GT-2000 13',          w:'Estabilidade + responsividade para avançada com histórico que quer performance.'},
+        medio: {n:'Adidas Adizero Boston 12',  w:'Meia-placa estável para avançada com histórico leve que quer performance real.'},
+        alto:  {n:'Nike Vaporfly 3',           w:'O carbono mais estável — para avançada com histórico leve que quer performance máxima.'}
+      }
+    },
+    longa: {
+      normal: {
+        baixo: {n:'Adidas Adizero Boston 12',  w:'Meia-placa econômica para longas com avançada. Excelente custo-benefício.'},
+        medio: {n:'Adidas Adizero Adios Pro 3',w:'Carbono completo com melhor custo-benefício. Para meia maratona e maratona com performance.'},
+        alto:  {n:'Nike Vaporfly 3',           w:'O carbono de referência para meia maratona e maratona. Estável, rápido e eficiente.'}
+      },
+      largo: {
+        baixo: {n:'Nike Pegasus 41',           w:'Base de rodagem para longas com pé levemente largo.'},
+        medio: {n:'Adidas Adizero Adios Pro 3',w:'Carbono com espaço no antepé. Para pé levemente largo em longas com performance.'},
+        alto:  {n:'Nike Alphafly 3',           w:'Para avançada de alto volume e pé levemente largo com foco em maratona. O mais rápido do mundo.'}
+      },
+      estreito: {
+        baixo: {n:'Asics Gel-Nimbus 26',       w:'Base de rodagem para longas com pé estreito.'},
+        medio: {n:'Asics Metaspeed Sky+',      w:'Carbono de pé estreito para longa distância com performance.'},
+        alto:  {n:'Nike Alphafly 3',           w:'Para avançada com alto volume de treino e pé estreito. O pináculo da performance em maratona.'}
+      },
+      lesao: {
+        baixo: {n:'Hoka Clifton 9',            w:'Amortecimento generoso para longas com histórico de lesão.'},
+        medio: {n:'Hoka Bondi 8',              w:'A maior proteção do mercado para longas com histórico de lesão.'},
+        alto:  {n:'Nike Vaporfly 3',           w:'Carbono estável para avançada com histórico leve que quer performance em longas.'}
+      }
+    },
+    primeira_prova: {
+      normal: {
+        baixo: {n:'Adidas Adizero Boston 12',  w:'Para avançada em primeira prova, meia-placa acessível entrega resultado real.'},
+        medio: {n:'Nike Vaporfly 3',           w:'Para avançada com base sólida, o Vaporfly entrega o resultado máximo na primeira prova.'},
+        alto:  {n:'Nike Vaporfly 3',           w:'O carbono de referência para avançada em primeira prova. Estável e rápido.'}
+      },
+      largo: {
+        baixo: {n:'Adidas Adizero Boston 12',  w:'Meia-placa com antepé mais generoso que Asics para avançada em primeira prova.'},
+        medio: {n:'Adidas Adizero Adios Pro 3',w:'Carbono com bom espaço no antepé para pé levemente largo em prova.'},
+        alto:  {n:'Nike Vaporfly 3',           w:'Carbono responsivo para pé levemente largo. Verificar numeração antes de comprar.'}
+      },
+      estreito: {
+        baixo: {n:'Adidas Adizero Boston 12',  w:'Performance + encaixe firme para avançada com pé estreito em prova.'},
+        medio: {n:'Asics Metaspeed Sky+',      w:'Carbono japonês para avançada com pé estreito em prova.'},
+        alto:  {n:'Asics Metaspeed Sky+',      w:'O melhor para avançada + pé estreito em prova de qualquer distância.'}
+      },
+      lesao: {
+        baixo: {n:'Adidas Adizero Boston 12',  w:'Meia-placa estável para avançada com histórico leve em primeira prova.'},
+        medio: {n:'Nike Vaporfly 3',           w:'O carbono mais estável para avançada com histórico leve em prova.'},
+        alto:  {n:'Nike Vaporfly 3',           w:'Carbono estável para avançada com histórico. Melhor escolha de prova.'}
+      }
+    }
+  }
+};
+
+function getRecommendation(){
+  const nivel=qAnswers['q1']||'iniciante';
+  const obj=qAnswers['q2']||'saude';
+  const pe=qAnswers['q3']||'normal';
+  const orca=qAnswers['q5']||'medio';
+  
+  const db=TENIS_DB[nivel];
+  if(!db)return null;
+  const byObj=db[obj]||db['saude'];
+  const byPe=byObj[pe]||byObj['normal'];
+  const byOrc=byPe[orca]||byPe['medio']||byPe['baixo'];
+  return byOrc;
+}
+
+function showResult(){
+  const rec=getRecommendation();
+  if(!rec)return;
+  
+  const nivel=qAnswers['q1'], obj=qAnswers['q2'], pe=qAnswers['q3'];
+  const freq=qAnswers['q4'], orca=qAnswers['q5'], extra=qAnswers['q6'];
+  
+  const nivelLabels={iniciante:'Iniciante',intermediaria:'Intermediária',avancada:'Avançada'};
+  const objLabels={saude:'Saúde e Bem-Estar',primeira_prova:'Primeira Prova',tempo:'Performance',longa:'Longa Distância'};
+  const peLabels={normal:'Pé Regular',largo:'Pé Largo / Joanete',estreito:'Pé Estreito',lesao:'Histórico de Lesão'};
+  const orcaLabels={baixo:'Até R$500',medio:'R$500–R$1.000',alto:'Acima de R$1.000'};
+  
+  let extraNote='';
+  if(extra==='ciclo')extraNote=' Considerando seu ciclo: na fase lútea, prefira o mesmo modelo com drop mais alto se possível, e cadarço elástico em provas longas.';
+  else if(extra==='pos_parto')extraNote=' Pós-parto: remeça o pé antes de confirmar o número — o pé pode ter alargado permanentemente.';
+  else if(extra==='hipermob')extraNote=' Hipermobilidade: priorize a versão de estabilidade do modelo recomendado. Evite zero drop.';
+  
+  const titulo=`${nivelLabels[nivel]||nivel} com foco em ${objLabels[obj]||obj}`;
+  const sub=`Seu perfil aponta para uma corredora ${nivelLabels[nivel]||nivel} que busca ${(objLabels[obj]||obj).toLowerCase()}, com ${(peLabels[pe]||pe).toLowerCase()} e orçamento de ${(orcaLabels[orca]||orca)}.${extraNote}`;
+  
+  document.getElementById('RTitulo').textContent=titulo;
+  document.getElementById('RSub').textContent=sub;
+  document.getElementById('RTenis').textContent=rec.n;
+  document.getElementById('RWhy').textContent=rec.w;
+  
+  document.getElementById('RGrid').innerHTML=`
+    <div class="res-item"><label>Nível</label><span>${nivelLabels[nivel]||nivel}</span></div>
+    <div class="res-item"><label>Objetivo</label><span>${objLabels[obj]||obj}</span></div>
+    <div class="res-item"><label>Morfologia do pé</label><span>${peLabels[pe]||pe}</span></div>
+    <div class="res-item"><label>Orçamento</label><span>${orcaLabels[orca]||orca}</span></div>
+  `;
+  
+  document.querySelectorAll('.quiz-wrap').forEach(w=>w.style.display='none');
+  document.getElementById('QResult').classList.add('show');
+}
+
+/* ── KEYBOARD ── */
+document.addEventListener('keydown',e=>{
+  if(e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA')return;
+  if(e.key==='ArrowRight')cp(1);
+  if(e.key==='ArrowLeft')cp(-1);
+});
+
+/* ── INIT ── */
+initDots(); buildMenu(); uiUpdate();
+if(st.c&&st.c>0){setTimeout(()=>gp(st.c),120);}
+</script>
+
+
+</body></html>
